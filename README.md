@@ -27,6 +27,10 @@ or if you have **Brunch** installed run:
 
 Then navigate your browser to `http://localhost:3333/`
 
+#### Compiling jade files
+run `./scripts/compile-jade.sh` in a seperate window to watch and compile jade files. In the future this process
+will be integrated.
+
 ### Running the app in production
 
 * `./scripts/production.sh` to minify javascript and css files.
@@ -35,7 +39,7 @@ Then navigate your browser to `http://localhost:3333/`
 
 * `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular) 
 
-if you a would like to wright your test in coffeescript run `./scripts/compile-tests.sh` in a 
+if you would like to write your test in coffeescript run `./scripts/compile-tests.sh` in a 
 seperate window.
 
 _Note: Testacular will run tests on save. To insure that changes are
