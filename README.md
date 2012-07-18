@@ -1,9 +1,11 @@
-# angular-brunch-seed — A seed for growing AngularJS apps using Brunch.io
+# angular-brunch-seed
+### A started project for AngularJS sing Brunch.io
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Compiles and compresses Javascript / CSS for production
+* Compiles and compresses Coffeescrpt / Javascript / CSS / Less / Sass /
+  SCSS / STYLUS for production
 * auto-reload during development saves you from manually refreshing the page.
 * Bootstrap integration with themes.
 
