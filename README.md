@@ -4,9 +4,11 @@
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Compiles and compresses Coffeescrpt / Javascript / CSS / Less / Sass /
-  SCSS / STYLUS for production
-* auto-reload during development saves you from manually refreshing the page.
+* Coffeescrpt / Less / Sass / SCSS / Stylus automatically compiled on save
+* auto-reload during development saves you from manually refreshing the page
+* Javascript / CSS minification for production
+* [testacular](https://github.com/vojtajina/testacular) integration for
+  unit tests
 * Bootstrap integration with themes.
 
 ## How to use angular-brunch-seed
