@@ -17,6 +17,10 @@ Features:
 * `cd angular-brunch-seed`
 * `./scripts/init.sh` to install node packages
 
+or if you have **Brunch** installed run:
+
+`brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
+
 ### Running the app during development
 
 * `./scripts/server.sh` to serve using **Brunch**
