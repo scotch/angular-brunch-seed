@@ -5,7 +5,7 @@ exports.config =
     wrapper: (path, data) ->
       """
 (function() {
-  'usestrict';
+  'use strict';
   #{data}
 }).call(this);\n\n
       """
