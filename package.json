@@ -22,7 +22,7 @@
     "coffee-script-brunch": ">= 1.0 < 1.5",
 
     "css-brunch": ">= 1.0 < 1.5",
-    "less-brunch": ">= 1.0 < 1.5",
+    "less-brunch": ">= 1.4 < 1.5",
     "stylus-brunch": ">= 1.0 < 1.5",
 
     "auto-reload-brunch": "git+ssh://git@github.com:brunch/auto-reload-brunch.git",
