@@ -1,0 +1,36 @@
+{
+  "author": "Kyle Finley",
+  "name": "sapling-seed",
+  "description": "Package description",
+  "version": "0.0.1",
+  "homepage": "https://github.com/scotch/angular-brunch-seed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scotch/angular-brunch-seed"
+  },
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "testacular test/testacular.config.js"
+  },
+  "dependencies": {
+    "brunch": "git+ssh://git@github.com:brunch/brunch.git",
+
+    "javascript-brunch": ">= 1.0 < 1.5",
+    "coffee-script-brunch": ">= 1.0 < 1.5",
+
+    "css-brunch": ">= 1.0 < 1.5",
+    "less-brunch": ">= 1.0 < 1.5",
+    "stylus-brunch": ">= 1.0 < 1.5",
+
+    "auto-reload-brunch": "git+ssh://git@github.com:brunch/auto-reload-brunch.git",
+
+    "uglify-js-brunch": ">= 1.0 < 1.5",
+    "clean-css-brunch": ">= 1.0 < 1.5"
+  },
+  "devDependencies": {
+    "testacular": ">= 0.0.14"
+  }
+}

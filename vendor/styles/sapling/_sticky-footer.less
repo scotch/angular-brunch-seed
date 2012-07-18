@@ -1,0 +1,23 @@
+
+// Sticky Footer
+
+@footerHeight: 88px;
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -@footerHeight;
+}
+
+.push {
+    height: @footerHeight;
+}
+
+.wrapper > .container {
+  padding-top: 24px;
+}

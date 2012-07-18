@@ -1,0 +1,59 @@
+// Overrides
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  /*font-family: 'Crete Round', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  padding-bottom: .3em;
+  color: #1F444B;
+}
+.nav .brand {
+  padding: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+// Forms
+.form-actions {
+  background-color: transparent;
+  border: none;
+}
+
+// Navbar
+.navbar-inner {
+  padding-top: 6px;
+  border-bottom: 1px solid #e5e5e5;
+  .box-shadow(inset 0 -2px 5px rgba(0, 0, 0, .025));
+}
+
+.navbar .nav > li > a {
+  text-shadow: none;
+}
+
+.navbar .brand a:hover {
+  text-decoration: none;
+}
+
+.nav-list .active > a, .nav-list .active > a:hover {
+  @shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  .box-shadow(@shadow);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+}
+.nav-list > li > a {
+  line-height: 24px;
+  padding: 3px 10px;
+}
+// Sections
+section header {
+  padding-bottom: 12px;
+}
+
+// Footer
+.footer {
+  background-color: @smoke;
+  padding: 30px 0;
+  text-shadow: none;
+  border-top: 1px solid #e5e5e5;
+  .box-shadow(inset 0 5px 15px rgba(0, 0, 0, .025));
+}
