@@ -25,7 +25,8 @@ or if you have **Brunch** installed run:
 
 * `./scripts/server.sh` to serve using **Brunch**
 
-Then navigate your browser to `http://localhost:3333/`
+Then navigate your browser to [http://localhost:3333](http://localhost:3333)
+
 
 #### Compiling jade files
 run `./scripts/compile-jade.sh` in a seperate window to watch and compile jade files. In the future this process
@@ -38,7 +39,7 @@ will be integrated.
 ### Running unit tests
 
 * `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular)
-* Open the browser you would like to test to `http://localhost:3334`
+* Open the browser you would like to test to [http://localhost:3334](http://localhost:3334)
 
 Notes:
 
