@@ -37,13 +37,17 @@ will be integrated.
 
 ### Running unit tests
 
-* `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular) 
+* `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular)
+* Open the browser you would like to test to `http://localhost:3334`
 
-if you would like to write your test in coffeescript run `./scripts/compile-tests.sh` in a 
+Notes:
+
+- If you would like to write your test in coffeescript run `./scripts/compile-tests.sh` in a 
 seperate window.
-
-_Note: Testacular will run tests on save. To insure that changes are
+- Testacular will run tests on save. To insure that changes are
 saved be sure to have `./script/server.sh` or `./script/development.sh` running in the console.
+- If you are on OS X you set the browsers that you would like to target
+  in the `/test/testacular_conf.js` file E.g. `browser = ["ChromeCanary", "Firefox"]`
 
 ### End to end testing
 
