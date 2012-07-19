@@ -53,11 +53,18 @@ saved be sure to have `./script/server.sh` or `./script/development.sh` running 
 
 WIP
 
+### Common issues
+
+`EMFILE` error
+- EMFILE means there're too many open files. Brunch watches all your project files and it's usually a pretty big number. You can fix this error with setting max opened file count to bigger number with command ulimit -n <number> (10000 should be enough).
+
+The compelete [Brunch FAQ](https://github.com/brunch/brunch/blob/master/docs/faq.rst)
 ### Receiving updates from upstream
 
 When we upgrade angular-seed's repo with newer angular or testing library code, you can just
 fetch the changes and merge them into your project with git.
 
+`git pull origin master`
 
 ## Directory Layout
 
