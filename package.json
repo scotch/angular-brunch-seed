@@ -31,6 +31,6 @@
     "clean-css-brunch": ">= 1.0 < 1.5"
   },
   "devDependencies": {
-    "testacular": ">= 0.0.14"
+    "testacular": ">= 0.0.15"
   }
 }
