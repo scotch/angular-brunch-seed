@@ -16,7 +16,7 @@
     "test": "testacular test/testacular.config.js"
   },
   "dependencies": {
-    "brunch": "git+ssh://git@github.com:brunch/brunch.git",
+    "brunch": ">= 1.4 < 1.5",
 
     "javascript-brunch": ">= 1.0 < 1.5",
     "coffee-script-brunch": ">= 1.0 < 1.5",
@@ -25,7 +25,7 @@
     "less-brunch": ">= 1.4 < 1.5",
     "stylus-brunch": ">= 1.0 < 1.5",
 
-    "auto-reload-brunch": "git+ssh://git@github.com:brunch/auto-reload-brunch.git",
+    "auto-reload-brunch": ">= 1.3 < 1.5",
 
     "uglify-js-brunch": ">= 1.0 < 1.5",
     "clean-css-brunch": ">= 1.0 < 1.5"
