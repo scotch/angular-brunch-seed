@@ -16,8 +16,8 @@ App.config([
 
   $routeProvider
 
-    .when('/view1', {templateUrl: '/partials/app/partial1.html'})
-    .when('/view2', {templateUrl: '/partials/app/partial2.html'})
+    .when('/view1', {templateUrl: '/partials/partial1.html'})
+    .when('/view2', {templateUrl: '/partials/partial2.html'})
 
     # Catch all
     .otherwise({redirectTo: '/view1'})

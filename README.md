@@ -72,7 +72,7 @@ fetch the changes and merge them into your project with git.
     _public/                  --> Contains generated file for servering the app
                                   These files should not be edited directly
     app/                      --> all of the files to be used in production
-      app/                    --> base directory for app
+      scripts/                --> base directory for app scripts
         controllers.js        --> application controllers
         directives.js         --> custom angular directives
         filters.js            --> custom angular filters
@@ -114,11 +114,10 @@ fetch the changes and merge them into your project with git.
       e2e/                    -->
         scenarios.js          --> end-to-end specs **NOT WORKING YET**
       unit/
-        app/
-          controllers.spec.js --> specs for controllers
-          directives.spec.js  --> specs for directives
-          filters.spec.js     --> specs for filters
-          services.spec.js    --> specs for services
+        controllers.spec.js   --> specs for controllers
+        directives.spec.js    --> specs for directives
+        filters.spec.js       --> specs for filters
+        services.spec.js      --> specs for services
       vendor/
         angular/              --> angular testing libraries
           angular-mocks.js    --> mocks that replace certain angular services in tests
