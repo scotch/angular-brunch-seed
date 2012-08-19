@@ -7,13 +7,13 @@ mod.AppCtrl = [
   '$resource'
   '$rootScope'
 
-(s, $location, $resource, $rootScope) ->
+($scope, $location, $resource, $rootScope) ->
 
   # Uses the url to determine if the selected
   # menu item should have the class active.
-  s.$location = $location
-  s.$watch('$location.path()', (path) ->
-    s.activeNavId = path || '/'
+  $scope.$location = $location
+  $scope.$watch('$location.path()', (path) ->
+    $scope.activeNavId = path || '/'
   )
 
   # getClass compares the current url with the id.
@@ -24,8 +24,8 @@ mod.AppCtrl = [
   #   getClass('/products') # returns 'active'
   #   getClass('/orders') # returns ''
   #
-  s.getClass = (id) ->
-    if s.activeNavId.substring(0, id.length) == id
+  $scope.getClass = (id) ->
+    if $scope.activeNavId.substring(0, id.length) == id
       return 'active'
     else
       return ''
@@ -34,15 +34,15 @@ mod.AppCtrl = [
 mod.MyCtrl1 = [
   '$scope'
 
-(s) ->
-  s.Title = "MyCtrl1"
+($scope) ->
+  $scope.Title = "MyCtrl1"
 ]
 
 mod.MyCtrl2 = [
   '$scope'
 
-(s) ->
-  s.Title = "MyCtrl2"
+($scope) ->
+  $scope.Title = "MyCtrl2"
 ]
 
 angular.module('app.controllers', []).controller(mod)
