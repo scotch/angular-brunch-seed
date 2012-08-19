@@ -1,6 +1,6 @@
 ###### Notice
 
-*This is the official list of **Sapling** authors for copyright purposes.*
+*This is the official list of **angular-brunch-seed** authors for copyright purposes.*
 
 *This file is distinct from the CONTRIBUTORS file. See the latter for an
 explanation.*
