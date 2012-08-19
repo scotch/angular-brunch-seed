@@ -1,7 +1,7 @@
 
-mod = {}
+angular.module('app.controllers', [])
 
-mod.AppCtrl = [
+.controller('AppCtrl', [
   '$scope'
   '$location'
   '$resource'
@@ -29,20 +29,18 @@ mod.AppCtrl = [
       return 'active'
     else
       return ''
-]
+])
 
-mod.MyCtrl1 = [
+.controller('MyCtrl1', [
   '$scope'
 
 ($scope) ->
-  $scope.Title = "MyCtrl1"
-]
+  $scope
+])
 
-mod.MyCtrl2 = [
+.controller('MyCtrl2', [
   '$scope'
 
 ($scope) ->
-  $scope.Title = "MyCtrl2"
-]
-
-angular.module('app.controllers', []).controller(mod)
+  $scope
+])
