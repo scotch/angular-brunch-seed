@@ -1,5 +1,5 @@
-# run 
-# node_modules/brunch/bin/brunch watch
+# run
+# brunch watch
 # JadeMaker
 
 spawn = require("child_process").spawn
