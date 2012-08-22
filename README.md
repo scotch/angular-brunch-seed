@@ -1,10 +1,8 @@
 # angular-brunch-seed
 ### A started project for AngularJS using Brunch.io
 
-[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io) + Jade
+[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io) + [Jade](http://jade-lang.com/)
  
-Initial release: **don't use it**.
-
 Features:
 * Coffeescrpt / Less / Sass / SCSS / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
