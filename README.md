@@ -1,7 +1,9 @@
 # angular-brunch-seed
 ### A started project for AngularJS using Brunch.io
 
-[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
+[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io) + Jade
+ 
+Initial release: **don't use it**.
 
 Features:
 * Coffeescrpt / Less / Sass / SCSS / Stylus automatically compiled on save
@@ -23,14 +25,9 @@ or if you have **Brunch** installed run:
 
 ### Running the app during development
 
-* `./scripts/server.sh` to serve using **Brunch**
+* `coffee ./scripts/development.coffee` to serve using **Brunch**
 
 Then navigate your browser to [http://localhost:3333](http://localhost:3333)
-
-
-#### Compiling jade files
-run `./scripts/compile-jade.sh` in a seperate window to watch and compile jade files. In the future this process
-will be integrated.
 
 ### Running the app in production
 
