@@ -20,6 +20,10 @@
 
     "javascript-brunch": ">= 1.0 < 1.5",
     "coffee-script-brunch": ">= 1.0 < 1.5",
+    "coffeelint-brunch": "*",
+
+    "chokidar": "*",
+    "nconf": "*",
 
     "css-brunch": ">= 1.0 < 1.5",
     "less-brunch": ">= 1.4 < 1.5",
