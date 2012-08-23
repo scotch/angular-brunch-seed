@@ -3,7 +3,7 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name='viewport', content='width=device-width')
+    meta(name='viewport', content='width=device-width', initial-scale='1.0')
     meta(name='description', content='')
     meta(name='author', content='')
     title(ng-bind-template='{{pageTitle}}')
@@ -22,15 +22,14 @@ html(lang='en')
     script(src='/js/app.js')
   body(ng-controller='AppCtrl')
     .wrapper
-      .navbar
+      .navbar.navbar-static-top
         .navbar-inner
           .container
-            a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            .brand
-              a(href='/') Angular Brunch Seed
+            a(href='/').brand Angular Brunch Seed
             .nav-collapse
               div(ng-include="'/partials/nav.html'")
       .container.main-content

@@ -16,11 +16,11 @@
 // override.less files as well, so be sure to add the themes
 // override.less file to the bottom of this page.
 
-// Sapling default
-@import "/vendor/styles/themes/sapling/_variables.less";
-
 // Bootstrap default
-// @import "/vendor/styles/themes/default/_variables.less";
+@import "/vendor/styles/themes/default/_variables.less";
+
+// Sapling default
+// @import "/vendor/styles/themes/sapling/_variables.less";
 
 // Smokey
 // @import "/vendor/styles/themes/smokey/_variables.less";
@@ -78,7 +78,11 @@
 @import "/vendor/styles/sapling/_sticky-footer.less";
 
 // Componets: Responsive
-@import "/vendor/styles/bootstrap/_responsive.less";
+@import "/vendor/styles/bootstrap/_responsive-utilities.less";
+@import "/vendor/styles/bootstrap/_responsive-1200px-min.less";
+@import "/vendor/styles/bootstrap/_responsive-768px-979px.less";
+@import "/vendor/styles/bootstrap/_responsive-767px-max.less";
+@import "/vendor/styles/bootstrap/_responsive-navbar.less";
 
 // AngularJS
 @import "/vendor/styles/sapling/_angular.less";
@@ -86,12 +90,12 @@
 // Utility classes
 @import "/vendor/styles/bootstrap/_utilities.less"; // Has to be last to override when necessary
 
+// Bootstrap default
+@import "/vendor/styles/themes/default/_overrides.less";
+
 // Theme Overrides
 // Sapling default
-@import "/vendor/styles/themes/sapling/_overrides.less";
-
-// Bootstrap default
-// @import "/vendor/styles/themes/default/_overrides.less";
+// @import "/vendor/styles/themes/sapling/_overrides.less";
 
 // Smokey
 // @import "/vendor/styles/themes/smokey/_overrides.less";
