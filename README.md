@@ -149,6 +149,6 @@ fetch the changes and merge them into your project with git.
             _variables.less
 ## Contact
 
-Comming soon...
+Coming soon...
 
-For more information on angular please check out http://sapling.scotchmedia.com/
+For more information on angular please check out <http://angularjs.org>
