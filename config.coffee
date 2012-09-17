@@ -28,6 +28,8 @@ exports.config =
     stylesheets:
       joinTo:
         'css/app.css': /^(app|vendor)/
+    templates:
+      joinTo: 'js/templates.js'
 
   # Enable or disable minifying of result js / css files.
   # minify: true
