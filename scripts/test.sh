@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node_modules/testacular/bin/testacular test/testacular_conf.js
+node_modules/testacular/bin/testacular start test/testacular.conf.js

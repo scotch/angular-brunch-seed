@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "test": "testacular test/testacular.config.js"
+    "test": "node_modules/testacular/bin/testacular start test/testacular.conf.js"
   },
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",
@@ -34,6 +34,6 @@
     "static-jade-brunch": ">= 1.4 < 1.5"
   },
   "devDependencies": {
-    "testacular": ">= 0.0.16"
+    "testacular": ">= 0.2.0"
   }
 }
