@@ -27,11 +27,6 @@ or if you have **Brunch** installed run:
 
 Then navigate your browser to [http://localhost:3333](http://localhost:3333)
 
-
-#### Compiling jade files
-run `./scripts/compile-jade.sh` in a seperate window to watch and compile jade files. In the future this process
-will be integrated.
-
 ### Running the app in production
 
 * `./scripts/production.sh` to minify javascript and css files.
@@ -102,7 +97,6 @@ fetch the changes and merge them into your project with git.
     node_modules              --> NodeJS modules
 
     scripts/                  --> handy shell scripts
-      compile-jade.sh         --> compiles jade to html
       compile-tests.sh        --> compiles coffeescript test to javascript
       development.sh          --> compiles files and watches for changes
       init.sh                 --> installs node modules
