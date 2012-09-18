@@ -4,7 +4,7 @@
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Coffeescript / Less / SASS / SCSS / Stylus automatically compiled on save
+* Coffeescript / Jade / Less / SASS / SCSS / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
 * [testacular](https://github.com/vojtajina/testacular) integration for
