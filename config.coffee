@@ -2,13 +2,7 @@ exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   modules:
     definition: false
-    wrapper: (path, data) ->
-      """
-(function() {
-  'use strict';
-  #{data}
-}).call(this);\n\n
-      """
+      
   paths:
     public: '_public'
   files:
