@@ -2,7 +2,7 @@
   "author": "Kyle Finley",
   "name": "sapling-seed",
   "description": "AngularJS + Brunch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/scotch/angular-brunch-seed",
   "repository": {
     "type": "git",
@@ -17,9 +17,10 @@
   },
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",
-
+  
     "javascript-brunch": ">= 1.0 < 1.5",
     "coffee-script-brunch": ">= 1.0 < 1.5",
+    "coffeelint-brunch": ">= 1.0 < 1.5",
 
     "css-brunch": ">= 1.0 < 1.5",
     "less-brunch": ">= 1.4 < 1.5",
