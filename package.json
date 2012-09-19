@@ -10,16 +10,16 @@
   },
   "contributors" : [
     {
-      "name" : "Costantino Giuliodori",
+      "name": "Costantino Giuliodori",
       "email": "costantino.giuliodori@gmail.com"
     },
     {
-      "name" : "Heikki Ylönen",
-      "email"	: "heikki74@gmail.com"
+      "name": "Heikki Ylönen",
+      "email": "heikki74@gmail.com"
     },
     {
-      "name" : "Jonah Kagan",
-      "email"	: "jonahkagan@gmail.com"
+      "name": "Jonah Kagan",
+      "email": "jonahkagan@gmail.com"
     }
   ],
   "engines": {
