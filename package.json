@@ -12,7 +12,7 @@
     "node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "node_modules/brunch/bin/brunch watch --server",
     "test": "node_modules/testacular/bin/testacular start test/testacular.conf.js"
   },
   "dependencies": {
