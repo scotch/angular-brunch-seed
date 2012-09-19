@@ -1,5 +1,5 @@
 ## CONVENTIONS
-### *Coding best practices for Sapling code.*
+### *Coding best practices for angular-brunch-seed code.*
 
 ***
 
