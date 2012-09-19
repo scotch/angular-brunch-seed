@@ -21,6 +21,24 @@ or if you have **Brunch** installed run:
 
 `brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
 
+
+### Using Jade
+
+You will find the jade files in the `app` and `app/partials` directories. Upon save the Jade files will be compiled to HTML
+and placed in the `app/assets` folder. Do not modify the files in the `app/assets` folder as they will be overriden with subsequent
+changes to their `*.jade` counter part.
+
+### Using html
+
+By default angular-brunch-seed uses jade templates. If you would prefer to use HTML run the command:
+
+```
+./scripts/compile-html.sh
+```
+All Jade file will be compiled to HTML and be placed in the `app/assets` directory. Addtionally, the `*.jade`
+files will be removed from the project. Any changes that you make to the `app/assets/**/*.html` files will now appear in the
+browser.
+
 ### Running the app during development
 
 * `./scripts/server.sh` to serve using **Brunch**
@@ -67,21 +85,27 @@ fetch the changes and merge them into your project with git.
     _public/                  --> Contains generated file for servering the app
                                   These files should not be edited directly
     app/                      --> all of the files to be used in production
-      scripts/                --> base directory for app scripts
-        controllers.js        --> application controllers
-        directives.js         --> custom angular directives
-        filters.js            --> custom angular filters
-        services.js           --> custom angular services
+
       assets                  --> a place for static assets. These files will be copied to
                                   the public directory un-modified.
         font/                 --> [fontawesome](http://fortawesome.github.com/Font-Awesome/) rendering icons
           fontawesome-webfont.*
         img/                  --> image files
-        partials/             --> angular view partials (partial html templates)
-          nav.html
-          partial1.html
+        partials/             --> angular view partials (partial HTML templates)
+          nav.html                If you are using HTML you may modify these files directly.
+          partial1.html           If you are using Jade these file will be update from their *.jade counterpart
           partial2.html
-        index.html            --> app layout file (the main html template file of the app)
+        index.html            --> app layout file (the main html template file of the app).
+
+      partials/               --> Jade partial files. This file will be converted to HTML upon save.
+        nav.jade              If you are using HTML this directory will not be present. You will find the template file
+        partial1.jade         in the `app/assets/partials` directory instead.
+        partial2.jade         If you are using Jade these file will be converted to HTML and copied to `app/assets/partials` upon save.
+      scripts/                --> base directory for app scripts
+        controllers.js        --> application controllers
+        directives.js         --> custom angular directives
+        filters.js            --> custom angular filters
+        services.js           --> custom angular services
 
       styles/                 --> all custom styles. Acceptable files types inculde:
                                   less, sass, scss and stylus
@@ -92,11 +116,13 @@ fetch the changes and merge them into your project with git.
             _variables.less   --> bootstrap variables to be used during the compilation process
         app.less              --> a file for importing styles.
       app.coffee              --> application definition and routes.
+      index.jade              --> Index file. This will be converted to assets/index.html on save
       init.coffee             --> application bootstrap
 
     node_modules              --> NodeJS modules
 
     scripts/                  --> handy shell scripts
+      compile-html.sh         --> compiles *.jade file to *.html file and places them in app/assets
       compile-tests.sh        --> compiles coffeescript test to javascript
       development.sh          --> compiles files and watches for changes
       init.sh                 --> installs node modules

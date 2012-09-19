@@ -35,6 +35,7 @@
     "static-jade-brunch": ">= 1.4 < 1.5"
   },
   "devDependencies": {
-    "testacular": ">= 0.2.0"
+    "testacular": ">= 0.2.0",
+    "jade":  ">= 0.26.3"
   }
 }
