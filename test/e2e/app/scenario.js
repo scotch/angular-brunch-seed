@@ -5,7 +5,7 @@
 describe('my app', function() {
 
   beforeEach(function() {
-    browser().navigateTo('http://localhost:3333/');
+    browser().navigateTo('/');
   });
 
 
@@ -23,7 +23,7 @@ describe('my app', function() {
 
     it('should render view1 when user navigates to /view1', function() {
       expect(element('[ng-view] p:first').text()).
-        toMatch(/partial for view 1/);
+          toMatch(/partial for view 1/);
     });
 
   });
@@ -38,7 +38,7 @@ describe('my app', function() {
 
     it('should render view2 when user navigates to /view2', function() {
       expect(element('[ng-view] p:first').text()).
-        toMatch(/partial for view 2/);
+          toMatch(/partial for view 2/);
     });
 
   });

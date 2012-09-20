@@ -10,6 +10,7 @@ exports.config =
       joinTo:
         'js/app.js': /^app/
         'js/vendor.js': /^vendor/
+        'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
           'vendor/scripts/console-helper.js'

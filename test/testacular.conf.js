@@ -11,8 +11,8 @@ files = [
   JASMINE_ADAPTER,
 
   // CoffeeScript //
-  // When using coffeescript you must run `./scripts/development.sh` in the background
-  // to compile the .coffee file to .js.
+  // When using coffeescript you must run `./scripts/development.sh` or
+  // `./scripts/server.sh` in the background to compile the .coffee file to .js.
   '_public/js/vendor.js',
   '_public/js/app.js',
 
@@ -20,6 +20,7 @@ files = [
 	// When using javascript the compilation step in not required.
 	// Uncomment these lines and comment out the coffeescript lines when using javascript
   // 'vendor/scripts/angular/angular.js',
+  // 'vendor/scripts/angular/angular-*.js',
   // 'vendor/scripts/**/*.js',
   // 'app/scripts/**/*.js',
 
