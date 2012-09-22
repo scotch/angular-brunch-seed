@@ -28,5 +28,5 @@ Kyle Finley <kylefinley@gmail.com>
 - Costantino Giuliodori <costantino.giuliodori@gmail.com>
 - Heikki Ylönen <heikki74@gmail.com>
 - Jonah Kagan <jonahkagan@gmail.com>
-
+- Gulin Serge <gulin.serge@gmail.com>
 
