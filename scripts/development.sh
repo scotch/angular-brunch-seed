@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm -rf _public
-node_modules/brunch/bin/brunch watch
+node_modules/.bin/brunch watch

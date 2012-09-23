@@ -1,1 +1,1 @@
-node node_modules/testacular/bin/testacular start test/testacular-e2e.conf.js
+node node_modules/.bin/testacular start test/testacular-e2e.conf.js

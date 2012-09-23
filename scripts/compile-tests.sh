@@ -1,3 +1,3 @@
 #!/bin/bash
 
-coffee -cw -b test
+node_modules/.bin/coffee -cw -b test
