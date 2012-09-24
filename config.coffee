@@ -9,7 +9,9 @@ exports.config =
     javascripts:
       joinTo:
         'js/app.js': /^app/
-        'js/vendor.js': /^vendor/
+        'js/vendor.js': /^vendor(\/|\\)commons/
+        'js/ltie9.js': /^vendor(\/|\\)bybrowser(\/|\\)ltie9/
+        'js/ltie7.js': /^vendor(\/|\\)bybrowser(\/|\\)ltie7/
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
