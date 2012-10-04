@@ -29,4 +29,4 @@ Kyle Finley <kylefinley@gmail.com>
 - Heikki Ylönen <heikki74@gmail.com>
 - Jonah Kagan <jonahkagan@gmail.com>
 - Gulin Serge <gulin.serge@gmail.com>
-
+- Matias Lahti <gigaton@gmail.com>
