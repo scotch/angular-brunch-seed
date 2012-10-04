@@ -1,5 +1,5 @@
 # angular-brunch-seed
-### A started project for AngularJS using Brunch.io
+### A starter project for AngularJS using Brunch.io
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
