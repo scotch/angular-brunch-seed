@@ -164,9 +164,7 @@ fetch the changes and merge them into your project with git.
           sapling             --> supplemental theme
             _overrides.less
             _variables.less
-          smokey              --> supplemental theme
-            _overrides.less
-            _variables.less
+
 ## Contact
 
 Coming soon...
