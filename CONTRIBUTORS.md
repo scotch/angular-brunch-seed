@@ -26,7 +26,7 @@ Kyle Finley <kylefinley@gmail.com>
 ### Other authors
 
 - Costantino Giuliodori <costantino.giuliodori@gmail.com>
+- Gulin Serge <gulin.serge@gmail.com>
 - Heikki Ylönen <heikki74@gmail.com>
 - Jonah Kagan <jonahkagan@gmail.com>
-- Gulin Serge <gulin.serge@gmail.com>
 - Matias Lahti <gigaton@gmail.com>

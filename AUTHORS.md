@@ -12,9 +12,9 @@ explanation.*
 *Please keep the list sorted.*
 
 * * *
-Costantino Giuliodori <costantino.giuliodori@gmail.com>
 
 - Costantino Giuliodori <costantino.giuliodori@gmail.com>
+- Gulin Serge <gulin.serge@gmail.com>
 - Heikki Ylönen <heikki74@gmail.com>
 - Jonah Kagan <jonahkagan@gmail.com>
 - Kyle Finley <kylefinley@gmail.com>
