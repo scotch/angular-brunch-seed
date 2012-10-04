@@ -24,6 +24,6 @@ App.config([
     # Catch all
     .otherwise({redirectTo: '/view1'})
 
-  # Without serve side support html5 must be disabled.
+  # Without server side support html5 must be disabled.
   $locationProvider.html5Mode(false)
 ])
