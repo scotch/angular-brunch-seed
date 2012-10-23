@@ -20,6 +20,7 @@ App.config([
 
     .when('/view1', {templateUrl: '/partials/partial1.html'})
     .when('/view2', {templateUrl: '/partials/partial2.html'})
+    .when('/todo', {templateUrl: '/partials/todo.html'})
 
     # Catch all
     .otherwise({redirectTo: '/view1'})

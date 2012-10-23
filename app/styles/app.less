@@ -1,5 +1,5 @@
 /*!
- * vendor/styles/bootstrap v2.0.3
+ * vendor/styles/bootstrap v2.1.1
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -11,21 +11,8 @@
 // CSS Reset
 @import "/vendor/styles/bootstrap/_reset.less";
 
-// Theme variables
-// Uncomment the theme you would like to use. Themes may include
-// override.less files as well, so be sure to add the themes
-// override.less file to the bottom of this page.
-
-// Bootstrap default
+// Core variables and mixins
 @import "/vendor/styles/themes/default/_variables.less";
-
-// Sapling default
-// @import "/vendor/styles/themes/sapling/_variables.less";
-
-// Your custom theme
-// @import "themes/custom/_variables.less";
-
-// Mixins
 @import "/vendor/styles/bootstrap/_mixins.less";
 
 // Grid system and page structure
@@ -55,6 +42,7 @@
 // Components: Nav
 @import "/vendor/styles/bootstrap/_navs.less";
 @import "/vendor/styles/bootstrap/_navbar.less";
+@import "/vendor/styles/bootstrap/_breadcrumbs.less";
 @import "/vendor/styles/bootstrap/_pagination.less";
 @import "/vendor/styles/bootstrap/_pager.less";
 
@@ -74,7 +62,7 @@
 // Componets: Footer
 @import "/vendor/styles/sapling/_sticky-footer.less";
 
-// Componets: Responsive
+// Responsive
 @import "/vendor/styles/bootstrap/_responsive-utilities.less";
 @import "/vendor/styles/bootstrap/_responsive-1200px-min.less";
 @import "/vendor/styles/bootstrap/_responsive-768px-979px.less";
@@ -96,4 +84,5 @@
 // @import "/vendor/styles/themes/sapling/_overrides.less";
 
 // Your custom theme
-// @import "themes/custom/_overrides.less";
+@import "themes/custom/_overrides.less";
+
