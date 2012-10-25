@@ -4,6 +4,13 @@
 
 * * *
 
+### 0.0.3 ###
+
+2012-10-25
+
++ update to testacular 0.4.x
+  - compiling test files to javascript is no longer necessary.
+
 ### 0.0.2 ###
 
 

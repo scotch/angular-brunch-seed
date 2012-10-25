@@ -4,69 +4,91 @@
 // base path, that will be used to resolve files and exclude
 basePath = '../';
 
-
 // list of files / patterns to load in the browser
 files = [
   JASMINE,
   JASMINE_ADAPTER,
 
-  // CoffeeScript //
-  // When using coffeescript you must run `./scripts/development.sh` or
-  // `./scripts/server.sh` in the background to compile the .coffee file to .js.
-  '_public/js/vendor.js',
-  '_public/js/app.js',
+  // Application Code //
+  'vendor/scripts/angular/angular.js',
+  'vendor/scripts/angular/angular-*.js',
+
+  //'vendor/scripts/**/*.js',
+  'vendor/scripts/**/*.coffee',
+  //'app/scripts/**/*.js',
+  'app/scripts/**/*.coffee',
 
   // Javascript //
-	// When using javascript the compilation step in not required.
-	// Uncomment these lines and comment out the coffeescript lines when using javascript
-  // 'vendor/scripts/angular/angular.js',
-  // 'vendor/scripts/angular/angular-*.js',
-  // 'vendor/scripts/**/*.js',
-  // 'app/scripts/**/*.js',
-
+ 
   'test/vendor/angular/angular-mocks.js',
 
-  // Specs
-  'test/unit/**/*.spec.js'
-];
+  // Specs //
 
+  // CoffeeScript //
+  'test/unit/**/*.spec.coffee'
+
+  // Javascript //
+  // 'test/unit/**/*.spec.js'
+];
 
 // list of files to exclude
 exclude = [];
 
+// use dots reporter, as travis terminal does not support escaping sequences
+// possible values: 'dots', 'progress', 'junit'
+// CLI --reporters progress
+reporters = ['progress', 'junit'];
 
-// test results reporter to use
-// possible values: dots || progress
-reporter = 'progress';
-
+junitReporter = {
+  // will be resolved to basePath (in the same way as files/exclude patterns)
+  outputFile: 'test/test-results.xml'
+};
 
 // web server port
+// CLI --port 3334
 port = 3334;
 
-
 // cli runner port
+// CLI --runner-port 9100
 runnerPort = 9100;
 
+// enable / disable colors in the output (reporters and logs)
+// CLI --colors --no-colors
+colors = true;
 
 // level of logging
 // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
+// CLI --log-level debug
 logLevel = LOG_INFO;
 
-
 // enable / disable watching file and executing tests whenever any file changes
+// CLI --auto-watch --no-auto-watch
 autoWatch = true;
-
 
 // Start these browsers, currently available:
 // - Chrome
 // - ChromeCanary
 // - Firefox
 // - Opera
-// - Safari
+// - Safari (only Mac)
 // - PhantomJS
-browsers = ['Chrome'];
+// - IE (only Windows)
+// CLI --browsers Chrome,Firefox,Safari
+browsers = [];
 
+// If browser does not capture in given timeout [ms], kill it
+// CLI --capture-timeout 5000
+captureTimeout = 5000;
 
-// Continuous Integration mode
-// if true, it capture browsers, run tests and exit
+// Auto run tests on start (when browsers are captured) and exit
+// CLI --single-run --no-single-run
 singleRun = false;
+
+// report which specs are slower than 500ms
+// CLI --report-slower-than 500
+reportSlowerThan = 500;
+
+// compile coffee scripts
+preprocessors = {
+  '**/*.coffee': 'coffee'
+};
