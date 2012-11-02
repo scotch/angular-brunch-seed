@@ -5,6 +5,8 @@ exports.config =
     wrapper: false
   paths:
     public: '_public'
+  conventions:
+    assets: /.*assets?(\/|\\)/
   files:
     javascripts:
       joinTo:
@@ -29,6 +31,8 @@ exports.config =
   plugins:
     jade:
       pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+    static_jade:
+      asset:  "app/jade_asset"  # specify the compilation output
 
   # Enable or disable minifying of result js / css files.
   # minify: true
