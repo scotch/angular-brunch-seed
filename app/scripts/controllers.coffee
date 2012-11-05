@@ -38,7 +38,7 @@ angular.module('app.controllers', [])
   '$scope'
 
 ($scope) ->
-  $scope
+  $scope.onePlusOne = 2
 ])
 
 .controller('MyCtrl2', [

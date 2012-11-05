@@ -9,8 +9,12 @@ describe "controllers", ->
 
   describe "MyCtrl1", ->
 
-    it "should...'"
+    it "should make scope testable", inject ($rootScope, $controller) ->
+      scope = $rootScope.$new()
+      ctrl = $controller "MyCtrl1",
+        $scope: scope,
+      expect(scope.onePlusOne).toEqual(2)
 
   describe "MyCtrl2", ->
 
-    it "should...'"
+    it "should..."
