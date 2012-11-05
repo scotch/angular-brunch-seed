@@ -4,6 +4,14 @@
 
 * * *
 
+### 0.0.4 ###
+
+2012-11-05
+
++ update to bootstrap 2.2.1
+  - made "styles/themes/custom" the default
++ Added a todo example commplements of @paivaric
+
 ### 0.0.3 ###
 
 2012-10-25
