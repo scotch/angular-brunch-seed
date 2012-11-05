@@ -1,0 +1,32 @@
+<!--
+<Created>with JetBrains WebStorm.</Created>
+<User>
+  <ricardopaiva></ricardopaiva>
+</User>
+<Date>
+  <22/>
+</Date>
+<10/>
+<12></12>
+<Time>
+  <15:45></15:45>
+</Time>
+<To>change this template use File | Settings | File Templates.</To>-->
+<div ng-app="ng-app">
+  <h2>Todo</h2>
+  <div ng-controller="TodoCtrl"><span>{{remaining()}} of {{todos.length}} remaining</span>[<a href="" ng-click="archive()">archive</a>]
+    <ul class="unstyled">
+      <li ng-repeat="todo in todos">
+        <label class="checkbox inline">
+          <input type="checkbox" ng-model="todo.done"/><span class="done{{todo.done}}">{{todo.text}}</span>
+        </label>
+      </li>
+    </ul>
+    <form ng-submit="addTodo()" class="form-inline">
+      <p>
+        <input type="text" ng-model="todoText" size="30" placeholder="add new todo here"/>
+        <input type="submit" value="add" class="btn btn-primary"/>
+      </p>
+    </form>
+  </div>
+</div>
