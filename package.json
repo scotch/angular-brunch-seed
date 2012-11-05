@@ -2,7 +2,7 @@
   "author": "Kyle Finley <kylefinley@gmail.com>",
   "name": "sapling-seed",
   "description": "AngularJS + Brunch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/scotch/angular-brunch-seed",
   "repository": {
     "type": "git",
@@ -34,8 +34,8 @@
     "node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
-    "start": "node node_modules/.bin/brunch watch --server",
-    "test": "node node_modules/.bin/testacular start test/testacular.conf.js"
+    "start": "node_modules/.bin/brunch watch --server",
+    "test": "node_modules/.bin/testacular start test/testacular.conf.js"
   },
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",
@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "coffee-script": "1.3.3",
-    "testacular": ">= 0.2.0",
+    "testacular": ">= 0.4.0",
     "jade":  ">= 0.26.3"
   }
 }

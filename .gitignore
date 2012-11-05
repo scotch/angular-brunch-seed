@@ -10,3 +10,5 @@ build.xml
 _public
 node_modules/*
 npm-debug.log
+
+test/test-results.xml
