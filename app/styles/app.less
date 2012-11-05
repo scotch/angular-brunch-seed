@@ -11,8 +11,21 @@
 // CSS Reset
 @import "/vendor/styles/bootstrap/_reset.less";
 
+// Theme variables
+// Uncomment the theme you would like to use. Themes may include
+// override.less files as well, so be sure to add the themes
+// override.less file to the bottom of this page.
+
+// Bootstrap default
+// @import "/vendor/styles/themes/default/_variables.less";
+
+// Sapling default
+// @import "/vendor/styles/themes/sapling/_variables.less";
+
+// Your custom theme
+@import "themes/custom/_variables.less";
+
 // Core variables and mixins
-@import "/vendor/styles/themes/default/_variables.less";
 @import "/vendor/styles/bootstrap/_mixins.less";
 
 // Grid system and page structure
@@ -79,11 +92,10 @@
 // Theme Overrides
 
 // Bootstrap default
-@import "/vendor/styles/themes/default/_overrides.less";
+// @import "/vendor/styles/themes/default/_overrides.less";
 
 // Sapling default
 // @import "/vendor/styles/themes/sapling/_overrides.less";
 
 // Your custom theme
 @import "themes/custom/_overrides.less";
-
