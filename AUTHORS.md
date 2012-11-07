@@ -19,3 +19,4 @@ explanation.*
 - Jonah Kagan <jonahkagan@gmail.com>
 - Kyle Finley <kylefinley@gmail.com>
 - Matias Lahti <gigaton@gmail.com>
+- Ricardo Paiva <ricardo@ricardopaiva.com>
