@@ -30,3 +30,4 @@ Kyle Finley <kylefinley@gmail.com>
 - Heikki Ylönen <heikki74@gmail.com>
 - Jonah Kagan <jonahkagan@gmail.com>
 - Matias Lahti <gigaton@gmail.com>
+- Ricardo Paiva <ricardo@ricardopaiva.com>
