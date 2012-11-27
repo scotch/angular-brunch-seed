@@ -58,7 +58,6 @@
   },
   "devDependencies": {
     "coffee-script": "1.3.3",
-    "testacular": ">= 0.4.0",
-    "jade":  ">= 0.26.3"
+    "testacular": ">= 0.4.0"
   }
 }
