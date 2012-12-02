@@ -4,6 +4,12 @@
 
 * * *
 
+### 0.0.5 ###
+
+2012-12-01
+
++ update `jade-brunch` to `1.4.1` resolving issue #32 - jade / jade-brunch dependency problem
+
 ### 0.0.4 ###
 
 2012-11-05
