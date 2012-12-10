@@ -45,6 +45,10 @@ browser.
 
 Then navigate your browser to [http://localhost:3333](http://localhost:3333)
 
+NOTE: Occasionally the scripts will not load properly on the initial
+load. If this occurs, refresh the page. Subsequent refresh will render
+correctly.
+
 ### Running the app in production
 
 * `./scripts/production.sh` to minify javascript and css files.
@@ -69,8 +73,13 @@ WIP
 
 ### Common issues
 
+Initial load does not render correctly; scripts are not loading. 
+- Occasionally the scripts will not load properly on the initial 
+  load. If this occurs, refresh the page. Subsequent refresh will render
+  correctly.
+
 `EMFILE` error
-- EMFILE means there're too many open files. Brunch watches all your project files and it's usually a pretty big number. You can fix this error with setting max opened file count to bigger number with command ulimit -n <number> (10000 should be enough).
+- EMFILE means there are too many open files. Brunch watches all your project files and it's usually a pretty big number. You can fix this error with setting max opened file count to bigger number with command ulimit -n <number> (10000 should be enough).
 
 The compelete [Brunch FAQ](https://github.com/brunch/brunch/blob/master/docs/faq.rst)
 ### Receiving updates from upstream
