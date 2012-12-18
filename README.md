@@ -174,8 +174,13 @@ fetch the changes and merge them into your project with git.
             _overrides.less
             _variables.less
 
-## Contact
+## Contributers
 
-Coming soon...
+[Complete list of code contributers](https://github.com/scotch/angular-brunch-seed/graphs/contributors)
+
+
+## Alternate Versions
+
+- [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [Chia-liang Kao](https://github.com/clkao)
 
 For more information on angular please check out <http://angularjs.org>
