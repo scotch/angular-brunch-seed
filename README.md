@@ -53,6 +53,8 @@ correctly.
 
 * `./scripts/production.sh` to minify javascript and css files.
 
+Please be aware of the caveats regarding Angular JS and minification, take a look at [Dependency Injection](http://docs.angularjs.org/guide/di) for information.
+
 ### Running unit tests
 
 * `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular)
