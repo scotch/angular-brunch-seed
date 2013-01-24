@@ -55,13 +55,11 @@ correctly.
 
 ### Running unit tests
 
-* `./scripts/test.sh` to run unit test with [testacular](https://github.com/vojtajina/testacular)
+* `./scripts/test.sh` to run unit tests with [testacular](https://github.com/vojtajina/testacular)
 * Open the browser you would like to test to [http://localhost:3334](http://localhost:3334)
 
 Notes:
 
-- If you would like to write your test in coffeescript run `./scripts/compile-tests.sh` in a 
-seperate window.
 - Testacular will run tests on save. To insure that changes are
 saved be sure to have `./script/server.sh` or `./script/development.sh` running in the console.
 - If you are on OS X you set the browsers that you would like to target
@@ -69,7 +67,8 @@ saved be sure to have `./script/server.sh` or `./script/development.sh` running 
 
 ### End to end testing
 
-WIP
+* run the app in development mode as described above using a separate terminal
+* `./scripts/test-e2e.sh` to run e2e tests with [testacular](https://github.com/vojtajina/testacular) using angular's scenario runner
 
 ### Common issues
 
@@ -141,7 +140,7 @@ fetch the changes and merge them into your project with git.
 
     test/                     --> test source files and libraries
       e2e/                    -->
-        scenarios.js          --> end-to-end specs **NOT WORKING YET**
+        scenarios.coffee      --> end-to-end specs
       unit/
         controllers.spec.js   --> specs for controllers
         directives.spec.js    --> specs for directives
@@ -160,7 +159,7 @@ fetch the changes and merge them into your project with git.
         bootstrap/            --> for responsive layout
           bootstrap-collapse.js
         console-helper.js     --> makes it safe to do `console.log()` always
-        jquery-1.7.2.js       --> for use with bootstrap-collapse
+        jquery-1.7.3.js       --> for use with bootstrap-collapse
       styles/                 --> sapling / sapling themes and 3 party CSS
         bootstrap/            --> boostrap files - **NOTE** the underscore prevents the
           _*.less                 files from automatically being added to application.css
