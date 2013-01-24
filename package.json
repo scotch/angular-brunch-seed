@@ -2,7 +2,7 @@
   "author": "Kyle Finley <kyle.finley@gmail.com>",
   "name": "sapling-seed",
   "description": "AngularJS + Brunch",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "homepage": "https://github.com/scotch/angular-brunch-seed",
   "repository": {
     "type": "git",
