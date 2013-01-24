@@ -1,5 +1,5 @@
 {
-  "author": "Kyle Finley <kylefinley@gmail.com>",
+  "author": "Kyle Finley <kyle.finley@gmail.com>",
   "name": "sapling-seed",
   "description": "AngularJS + Brunch",
   "version": "0.0.6",
@@ -8,28 +8,6 @@
     "type": "git",
     "url": "https://github.com/scotch/angular-brunch-seed"
   },
-  "contributors" : [
-    {
-      "name": "Costantino Giuliodori",
-      "email": "costantino.giuliodori@gmail.com"
-    },
-    {
-      "name": "Gulin Serge",
-      "email": "gulin.serge@gmail.com"
-    },
-    {
-      "name": "Heikki Ylönen",
-      "email": "heikki74@gmail.com"
-    },
-    {
-      "name": "Jonah Kagan",
-      "email": "jonahkagan@gmail.com"
-    },
-    {
-      "name": "Matias Lahti",
-      "email": "gigaton@gmail.com"
-    }
-  ],
   "engines": {
     "node": "~0.6.10 || 0.8 || 0.9"
   },
@@ -39,7 +17,7 @@
   },
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",
-  
+
     "javascript-brunch": ">= 1.0 < 1.5",
     "coffee-script-brunch": ">= 1.0 < 1.5",
     "coffeelint-brunch": ">= 1.0 < 1.5",

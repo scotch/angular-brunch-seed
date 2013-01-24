@@ -11,6 +11,10 @@ Features:
   unit tests
 * Bootstrap integration with themes.
 
+## Alternate Versions
+
+- [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [Chia-liang Kao](https://github.com/clkao)
+
 ## How to use angular-brunch-seed
 
 * `git clone https://github.com/scotch/angular-brunch-seed.git` to clone the **angular-brunch-seed** repository
@@ -178,10 +182,5 @@ fetch the changes and merge them into your project with git.
 ## Contributers
 
 [Complete list of code contributers](https://github.com/scotch/angular-brunch-seed/graphs/contributors)
-
-
-## Alternate Versions
-
-- [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [Chia-liang Kao](https://github.com/clkao)
 
 For more information on angular please check out <http://angularjs.org>
