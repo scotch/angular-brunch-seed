@@ -13,8 +13,6 @@ describe "my app", ->
     expect(browser().location().url()).toBe "/view1"
 
   describe "todo", ->
-    beforeEach ->
-      browser().reload()
 
     it "should list 2 items", ->
       expect(repeater("[ng-view] ul li").count()).toEqual 2
