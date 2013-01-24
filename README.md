@@ -159,7 +159,7 @@ fetch the changes and merge them into your project with git.
         bootstrap/            --> for responsive layout
           bootstrap-collapse.js
         console-helper.js     --> makes it safe to do `console.log()` always
-        jquery-1.7.3.js       --> for use with bootstrap-collapse
+        jquery-1.8.3.js       --> for use with bootstrap-collapse
       styles/                 --> sapling / sapling themes and 3 party CSS
         bootstrap/            --> boostrap files - **NOTE** the underscore prevents the
           _*.less                 files from automatically being added to application.css
