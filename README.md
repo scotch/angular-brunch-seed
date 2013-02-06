@@ -13,7 +13,8 @@ Features:
 
 ## Alternate Versions
 
-- [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [Chia-liang Kao](https://github.com/clkao)
+- [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [@clkao](https://github.com/clkao) - Uses [Livescript](http://livescript.net/) instead of [Coffeescript](http://coffeescript.org/)
+- [True North](https://github.com/scoarescoare/angular-brunch-true-north) by [@scoarescoare](https://github.com/scoarescoare) - Uses [SASS](http://sass-lang.com/) instead of [LESS](http://lesscss.org/)
 
 ## How to use angular-brunch-seed
 
