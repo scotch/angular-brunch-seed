@@ -18,11 +18,9 @@
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",
 
-    "javascript-brunch": ">= 1.0 < 1.5",
     "coffee-script-brunch": ">= 1.0 < 1.5",
     "coffeelint-brunch": ">= 1.0 < 1.5",
 
-    "css-brunch": ">= 1.0 < 1.5",
     "less-brunch": ">= 1.4 < 1.5",
     "stylus-brunch": ">= 1.0 < 1.5",
 
@@ -31,8 +29,12 @@
     "uglify-js-brunch": ">= 1.0 < 1.5",
     "clean-css-brunch": ">= 1.0 < 1.5",
 
-    "jade-brunch": ">= 1.4.1 < 1.5",
-    "static-jade-brunch": ">= 1.4.0 <= 1.4.5 || >= 1.4.8 < 1.5"
+    "bower-stylesheet-brunch": "*",
+    "bower-javascript-brunch": "*",
+    "bower-asserts-brunch": "*",
+    "bower": "~0.7.0",
+
+    "jade-angularjs-brunch" : "0.0.1"
   },
   "devDependencies": {
     "jade": ">= 0.27.7",
