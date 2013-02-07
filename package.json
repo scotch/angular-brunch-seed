@@ -34,7 +34,7 @@
     "bower-asserts-brunch": "*",
     "bower": "~0.7.0",
 
-    "jade-angularjs-brunch" : "0.0.1"
+    "jade-angularjs-brunch" : "0.0.3"
   },
   "devDependencies": {
     "jade": ">= 0.27.7",
