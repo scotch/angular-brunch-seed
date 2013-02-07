@@ -41,6 +41,7 @@ exports.config =
     bower:
       extend:
         "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
+        "styles": []
       asserts:
         "img" : /bootstrap(\\|\/)img/
         "font": /font-awesome(\\|\/)font/
