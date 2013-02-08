@@ -1,5 +1,7 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  conventions:
+    ignored: /^(vendor.*\.less|.+node_modules.+|.+_.+\.+)$/
   modules:
     definition: false
     wrapper: false
@@ -13,36 +15,39 @@ exports.config =
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
-          'vendor/scripts/console-helper.js'
-          'vendor/scripts/jquery-1.8.3.js'
-          'vendor/scripts/angular/angular.js'
-          'vendor/scripts/angular/angular-resource.js'
-          'vendor/scripts/angular/angular-cookies.js'
-
-          'vendor/scripts/bootstrap/bootstrap-transition.js'
-          'vendor/scripts/bootstrap/bootstrap-alert.js'
-          'vendor/scripts/bootstrap/bootstrap-button.js'
-          'vendor/scripts/bootstrap/bootstrap-carousel.js'
-          'vendor/scripts/bootstrap/bootstrap-collapse.js'
-          'vendor/scripts/bootstrap/bootstrap-dropdown.js'
-          'vendor/scripts/bootstrap/bootstrap-modal.js'
-          'vendor/scripts/bootstrap/bootstrap-tooltip.js'
-          'vendor/scripts/bootstrap/bootstrap-popover.js'
-          'vendor/scripts/bootstrap/bootstrap-scrollspy.js'
-          'vendor/scripts/bootstrap/bootstrap-tab.js'
-          'vendor/scripts/bootstrap/bootstrap-typeahead.js'
-          'vendor/scripts/bootstrap/bootstrap-affix.js'
+          'vendor/console-polyfill/index.js'
+          'vendor/jquery/jquery.js'
+          'vendor/angular/angular.js'          
+          'vendor/angular-resource/angular-resource.js'          
+          'vendor/angular-cookies/angular-cookies.js'          
+          'vendor/angular-sanitize/angular-sanitize.js'                    
+          'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
     stylesheets:
       joinTo:
         'css/app.css': /^(app|vendor)/
+
     templates:
-      joinTo: 'js/templates.js'
+      joinTo: 
+        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   plugins:
     jade:
       pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+    jade_angular:
+      modules_folder: 'partials'
+      locals: {}
+
+    bower:
+      extend:
+        "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
+        "angular-mocks": []
+        "styles": []
+      asserts:
+        "img" : /bootstrap(\\|\/)img/
+        "font": /font-awesome(\\|\/)font/
+
 
   # Enable or disable minifying of result js / css files.
   # minify: true
