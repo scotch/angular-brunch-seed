@@ -20,6 +20,7 @@ exports.config =
           'vendor/angular/angular.js'          
           'vendor/angular-resource/angular-resource.js'          
           'vendor/angular-cookies/angular-cookies.js'          
+          'vendor/angular-sanitize/angular-sanitize.js'                    
           'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
@@ -41,6 +42,7 @@ exports.config =
     bower:
       extend:
         "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
+        "angular-mocks": []
         "styles": []
       asserts:
         "img" : /bootstrap(\\|\/)img/
