@@ -3,6 +3,8 @@ nbproject
 manifest.mf
 build.xml
 
+node_modules
+
 .project
 .settings
 .idea/*
