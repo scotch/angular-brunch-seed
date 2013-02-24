@@ -4,6 +4,12 @@
 
 * * *
 
+### 0.0.7 ###
+
+2013-1-1
+
++ updated Bootstrap to 2.3 contributed by @davoudrafati
+
 ### 0.0.6 ###
 
 2012-12-17
