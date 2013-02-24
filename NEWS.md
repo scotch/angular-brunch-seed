@@ -4,6 +4,27 @@
 
 * * *
 
+### 0.1.0 ###
+
+2013-2-24
+
++ added Bower support contributed by @GulinSS. Bower package will be install
+  in the `vendor` directory. NOTE: `vendor` directory is now ignored by git
++ switched Jade compilation to [jade-angularjs-brunch](https://github.com/GulinSS/jade-angularjs-brunch)
+  [jade-angular-brunch](https://github.com/GulinSS/jade-angularjs-brunch)
+  works by creating an Angular module named`'partials'` that adds the HTML
+  string of the partials to the `$templateCache`. For this to work you must add
+  `partials` to yours apps required modules list and include the `partials.js`
+  file in your `index.html` file.
+  If you are interested in the compiled HTML view the contents 
+  of the `_public/js/partials.js` file.
++ Moved bootstrap templates to
+  [boostrap-less-templates](https://github.com/scotch/boostrap-less-templates).
+  They are now install as a Bower package.
++ Moved custom template `_override.less` and `_variables.less` to `app/styles/`
++ Removed mention of SASS and SCSS files from README.md issue #47. These file
+  types require the sass gem. 
+
 ### 0.0.7 ###
 
 2013-1-1
