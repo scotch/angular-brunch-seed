@@ -16,29 +16,28 @@
     "test": "node_modules/.bin/testacular start test/testacular.conf.js"
   },
   "dependencies": {
-    "brunch": ">= 1.4 < 1.5",
+    "jade": ">= 0.28",
+    "coffee-script": ">= 1.4",
+    "brunch": ">= 1.5 < 1.6",
 
-    "coffee-script-brunch": ">= 1.0 < 1.5",
-    "coffeelint-brunch": ">= 1.0 < 1.5",
+    "coffee-script-brunch": ">= 1.5 < 1.6",
+    "coffeelint-brunch": ">= 1.4 < 1.6",
 
-    "less-brunch": ">= 1.4 < 1.5",
-    "stylus-brunch": ">= 1.0 < 1.5",
+    "less-brunch": ">= 1.5 < 1.6",
+    "stylus-brunch": ">= 1.5 < 1.6",
 
-    "auto-reload-brunch": ">= 1.3 < 1.5",
+    "auto-reload-brunch": ">= 1.5 < 1.6",
 
-    "uglify-js-brunch": ">= 1.0 < 1.5",
-    "clean-css-brunch": ">= 1.0 < 1.5",
+    "uglify-js-brunch": ">= 1.5 < 1.6",
+    "clean-css-brunch": ">= 1.5 < 1.6",
 
     "bower-stylesheet-brunch": "*",
     "bower-javascript-brunch": "*",
     "bower-asserts-brunch": "*",
     "bower": "~0.7.0",
 
-    "jade-angularjs-brunch" : "0.0.3"
-  },
-  "devDependencies": {
-    "jade": ">= 0.27.7",
-    "coffee-script": "1.3.3",
-    "testacular": ">= 0.4.0"
+    "jade-angularjs-brunch": ">= 0.0.5",
+
+    "testacular": ">= 0.6.0"
   }
 }
