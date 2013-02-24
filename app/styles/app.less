@@ -14,16 +14,16 @@
 // Theme variables
 // Uncomment the theme you would like to use. Themes may include
 // override.less files as well, so be sure to add the themes
-// override.less file to the bottom of this page.
+// override.less file to the bottom of this file.
 
 // Bootstrap default
-// @import "/vendor/styles/themes/default/_variables.less";
+// @import "/vendor/bootstrap-less-themes/themes/default/variables.less";
 
 // Sapling default
-// @import "/vendor/styles/themes/sapling/_variables.less";
+// @import "/vendor/bootstrap-less-themes/themes/sapling/variables.less";
 
 // Your custom theme
-@import "themes/custom/_variables.less";
+@import "_variables.less";
 
 // Core variables and mixins
 @import "/vendor/bootstrap/less/mixins.less";
@@ -39,7 +39,7 @@
 @import "/vendor/bootstrap/less/forms.less";
 @import "/vendor/bootstrap/less/tables.less";
 
-// Components: common
+// vendor: common
 @import "/vendor/bootstrap/less/sprites.less";
 
 @import "/vendor/font-awesome/less/font-awesome.less";
@@ -49,24 +49,24 @@
 @import "/vendor/bootstrap/less/component-animations.less";
 @import "/vendor/bootstrap/less/close.less";
 
-// Components: Buttons & Alerts
+// vendor: Buttons & Alerts
 @import "/vendor/bootstrap/less/buttons.less";
 @import "/vendor/bootstrap/less/button-groups.less";
 @import "/vendor/bootstrap/less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
-// Components: Nav
+// vendor: Nav
 @import "/vendor/bootstrap/less/navs.less";
 @import "/vendor/bootstrap/less/navbar.less";
 @import "/vendor/bootstrap/less/breadcrumbs.less";
 @import "/vendor/bootstrap/less/pagination.less";
 @import "/vendor/bootstrap/less/pager.less";
 
-// Components: Popovers
+// vendor: Popovers
 @import "/vendor/bootstrap/less/modals.less";
 @import "/vendor/bootstrap/less/tooltip.less";
 @import "/vendor/bootstrap/less/popovers.less";
 
-// Components: Misc
+// vendor: Misc
 @import "/vendor/bootstrap/less/thumbnails.less";
 @import "/vendor/bootstrap/less/media.less";
 @import "/vendor/bootstrap/less/labels-badges.less";
@@ -76,7 +76,7 @@
 @import "/vendor/bootstrap/less/hero-unit.less";
 
 // Componets: Footer
-@import "/vendor/styles/sapling/_sticky-footer.less";
+@import "/vendor/bootstrap-less-themes/themes/sapling/sticky-footer.less";
 
 // Responsive
 @import "/vendor/bootstrap/less/responsive-utilities.less";
@@ -86,7 +86,7 @@
 @import "/vendor/bootstrap/less/responsive-navbar.less";
 
 // AngularJS
-@import "/vendor/styles/sapling/_angular.less";
+@import "/vendor/bootstrap-less-themes/themes/angular/forms.less";
 
 // Utility classes
 @import "/vendor/bootstrap/less/utilities.less"; // Has to be last to override when necessary
@@ -94,10 +94,10 @@
 // Theme Overrides
 
 // Bootstrap default
-// @import "/vendor/styles/themes/default/_overrides.less";
+// @import "/vendor/bootstrap-less-themes/themes/default/overrides.less";
 
 // Sapling default
-// @import "/vendor/styles/themes/sapling/_overrides.less";
+// @import "/vendor/bootstrap-less-themes/themes/sapling/overrides.less";
 
 // Your custom theme
-@import "themes/custom/_overrides.less";
+@import "_overrides.less";
