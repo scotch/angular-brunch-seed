@@ -10,17 +10,13 @@ files = [
   JASMINE_ADAPTER,
 
   // Application Code //
-  'vendor/scripts/angular/angular.js',
-  'vendor/scripts/angular/angular-*.js',
+  'vendor/jquery/jquery.js',
+  'vendor/angular/angular.js',
+  'vendor/angular-*/angular-*.js',
+  'vendor/bootstrap/docs/assets/js/bootstrap.js',
 
-  //'vendor/scripts/**/*.js',
-  'vendor/scripts/**/*.coffee',
   //'app/scripts/**/*.js',
   'app/scripts/**/*.coffee',
-
-  // Javascript //
- 
-  'test/vendor/angular/angular-mocks.js',
 
   // Specs //
 

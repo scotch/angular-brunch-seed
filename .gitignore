@@ -3,6 +3,9 @@ nbproject
 manifest.mf
 build.xml
 
+node_modules
+vendor
+
 .project
 .settings
 .idea/*
