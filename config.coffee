@@ -1,7 +1,7 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    ignored: /^(vendor.*\.less|.+node_modules.+|.+_.+\.+)$/
+    ignored: /^(components.*\.less|.+node_modules.+|.+_.+\.+)$/
   modules:
     definition: false
     wrapper: false
@@ -11,22 +11,22 @@ exports.config =
     javascripts:
       joinTo:
         'js/app.js': /^app/
-        'js/vendor.js': /^vendor/
+        'js/components.js': /^components/
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
-          'vendor/console-polyfill/index.js'
-          'vendor/jquery/jquery.js'
-          'vendor/angular/angular.js'          
-          'vendor/angular-resource/angular-resource.js'          
-          'vendor/angular-cookies/angular-cookies.js'          
-          'vendor/angular-sanitize/angular-sanitize.js'                    
-          'vendor/bootstrap/docs/assets/js/bootstrap.js'
+          'components/console-polyfill/index.js'
+          'components/jquery/jquery.js'
+          'components/angular/angular.js'
+          'components/angular-resource/angular-resource.js'
+          'components/angular-cookies/angular-cookies.js'
+          'components/angular-sanitize/angular-sanitize.js'
+          'components/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|vendor)/
+        'css/app.css': /^(app|components)/
 
     templates:
       joinTo: 
@@ -41,7 +41,7 @@ exports.config =
 
     bower:
       extend:
-        "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
+        "bootstrap" : 'components/bootstrap/docs/assets/js/bootstrap.js'
         "angular-mocks": []
         "styles": []
       asserts:
