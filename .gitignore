@@ -4,7 +4,6 @@ manifest.mf
 build.xml
 
 node_modules
-vendor
 
 .project
 .settings
@@ -15,3 +14,14 @@ node_modules/*
 npm-debug.log
 
 test/test-results.xml
+
+vendor/angular-cookies/
+vendor/angular-mocks/
+vendor/angular-resource/
+vendor/angular-sanitize/
+vendor/angular/
+vendor/bootstrap-less-themes/
+vendor/bootstrap/
+vendor/console-polyfill/
+vendor/font-awesome/
+vendor/jquery/

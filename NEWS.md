@@ -4,6 +4,14 @@
 
 * * *
 
+### 0.2.1 ###
+
+2013-2-26
+
++ added `vendor/` directory back as a temporary fix. Bower wasn't creating 
+  the directory on Windows. Bower directory still needs to be switch to 
+  `conponents/` issue #50
+
 ### 0.2.0 ###
 
 2013-2-24
