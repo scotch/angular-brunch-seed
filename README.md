@@ -19,6 +19,9 @@ Features:
 - [True North](https://github.com/scoarescoare/angular-brunch-true-north) 
   by [@scoarescoare](https://github.com/scoarescoare) - Uses [SASS](http://sass-lang.com/) 
   instead of [LESS](http://lesscss.org/)
+- [brunch-on-asteroids](https://github.com/exlee/brunch-on-asteroids) 
+  by [@exlee](https://github.com/exlee) - A minimalistic version that adds Generators,
+  Bootswatch themes, D3, and more.
 
 ## How to use angular-brunch-seed
 
@@ -30,6 +33,22 @@ Features:
 Or if you have **Brunch** installed run:
 
 `brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
+
+You must also install packages using bower. Either
+
+```
+bower install
+```
+or
+```
+./node_modules/.bin/bower
+```
+
+*NOTE:* Depending upon your connection and processor speed the build can take
+a substantial amount of time (3 - 15 minutes). The bower step is particularly
+slow, because it downloads the complete git history. If you think that there
+might be a problems, check you network traffic. If the build is still
+downloading then it's still working.
 
 ### Using Jade
 
@@ -71,7 +90,8 @@ Then navigate your browser to [http://localhost:3333](http://localhost:3333)
 
 *NOTE:* Occasionally the scripts will not load properly on the initial
 load. If this occurs, refresh the page. Subsequent refresh will render
-correctly.
+correctly. Also, the initial load will take longer then subsequent loads,
+some where around 20 seconds is normal.
 
 ### Running the app in production
 
