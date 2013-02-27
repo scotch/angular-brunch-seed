@@ -4,6 +4,12 @@
 
 * * *
 
+### 0.2.2 ###
+
+2013-2-27
+
++ update ./scripts/production.bat|sh scripts to Brunch 1.5 closes #52
+
 ### 0.2.1 ###
 
 2013-2-26
