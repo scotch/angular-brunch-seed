@@ -15,4 +15,13 @@ npm-debug.log
 
 test/test-results.xml
 
-components
+vendor/angular-cookies/
+vendor/angular-mocks/
+vendor/angular-resource/
+vendor/angular-sanitize/
+vendor/angular/
+vendor/bootstrap-less-themes/
+vendor/bootstrap/
+vendor/console-polyfill/
+vendor/font-awesome/
+vendor/jquery/
