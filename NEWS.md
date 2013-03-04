@@ -4,6 +4,15 @@
 
 * * *
 
+### 0.3.0 ###
+
+2013-3-4
+
++ switched bower directory from `vendor` to `components` contributed by @evantill.
+  **NOTE** be sure to delete the Bower components from the `vendor/` directory
++ added `app/assets/fix/auto-reload.js` manually as a temporary fix for issue
+  #51
+
 ### 0.2.2 ###
 
 2013-2-27
