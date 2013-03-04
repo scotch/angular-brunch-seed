@@ -1,36 +1,35 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    ignored: /^(components.*\.less|.+node_modules.+|.+_.+\.+)$/
+    ignored: /^(vendor.*\.less|.+node_modules.+|.+_.+\.+)$/
   modules:
     definition: false
     wrapper: false
   paths:
     public: '_public'
-    vendor: 'components'
   files:
     javascripts:
       joinTo:
         'js/app.js': /^app/
-        'js/components.js': /^components/
+        'js/vendor.js': /^vendor/
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
-          'components/console-polyfill/index.js'
-          'components/jquery/jquery.js'
-          'components/angular/angular.js'
-          'components/angular-resource/angular-resource.js'
-          'components/angular-cookies/angular-cookies.js'
-          'components/angular-sanitize/angular-sanitize.js'
-          'components/bootstrap/docs/assets/js/bootstrap.js'
+          'vendor/console-polyfill/index.js'
+          'vendor/jquery/jquery.js'
+          'vendor/angular/angular.js'          
+          'vendor/angular-resource/angular-resource.js'          
+          'vendor/angular-cookies/angular-cookies.js'          
+          'vendor/angular-sanitize/angular-sanitize.js'                    
+          'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|components)/
+        'css/app.css': /^(app|vendor)/
 
     templates:
-      joinTo:
+      joinTo: 
         'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   plugins:
@@ -42,7 +41,7 @@ exports.config =
 
     bower:
       extend:
-        "bootstrap" : 'components/bootstrap/docs/assets/js/bootstrap.js'
+        "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
         "angular-mocks": []
         "styles": []
       asserts:
