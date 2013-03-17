@@ -2,6 +2,7 @@ exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     ignored: /^(vendor.*\.less|.+node_modules.+|.+_.+\.+)$/
+    assets: /^app\/assets\//
   modules:
     definition: false
     wrapper: false
