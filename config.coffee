@@ -18,16 +18,20 @@ exports.config =
         before: [
           'vendor/console-polyfill/index.js'
           'vendor/jquery/jquery.js'
-          'vendor/angular/angular.js'          
-          'vendor/angular-resource/angular-resource.js'          
-          'vendor/angular-cookies/angular-cookies.js'          
-          'vendor/angular-sanitize/angular-sanitize.js'                    
+          'vendor/angular/angular.js'
+          'vendor/angular-resource/angular-resource.js'
+          'vendor/angular-cookies/angular-cookies.js'
+          'vendor/angular-sanitize/angular-sanitize.js'
           'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
     stylesheets:
       joinTo:
         'css/app.css': /^(app|vendor)/
+      order:
+        before: [
+          'app/styles/app.less'
+        ]
 
     templates:
       joinTo: 
