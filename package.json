@@ -34,7 +34,7 @@
     "bower-stylesheet-brunch": "*",
     "bower-javascript-brunch": "*",
     "bower-asserts-brunch": "*",
-    "bower": "~0.7.0",
+    "bower": "~0.8.5",
 
     "jade-angularjs-brunch": ">= 0.0.5",
 
