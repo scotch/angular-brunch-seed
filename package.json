@@ -21,7 +21,6 @@
     "brunch": ">= 1.5 < 1.6",
 
     "coffee-script-brunch": ">= 1.5 < 1.6",
-    "coffeelint-brunch": ">= 1.4 < 1.6",
 
     "less-brunch": ">= 1.5 < 1.6",
     "stylus-brunch": ">= 1.5 < 1.6",
