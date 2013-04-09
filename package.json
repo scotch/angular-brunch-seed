@@ -30,8 +30,8 @@
     "uglify-js-brunch": ">= 1.5 < 1.6",
     "clean-css-brunch": ">= 1.5 < 1.6",
 
-    "bower-stylesheet-brunch": "*",
-    "bower-javascript-brunch": "*",
+    "bower-stylesheet-brunch": "git://github.com/GulinSS/bower-stylesheet-brunch/#master",
+    "bower-javascript-brunch": "git://github.com/GulinSS/bower-javascript-brunch/#master",
     "bower-asserts-brunch": "*",
     "bower": "~0.8.5",
 
