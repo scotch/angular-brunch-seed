@@ -1,1 +1,1 @@
-node_modules/.bin/testacular start test/testacular-e2e.conf.js
+node_modules/.bin/karma start test/karma-e2e.conf.js

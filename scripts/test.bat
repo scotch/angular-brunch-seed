@@ -1,1 +1,1 @@
-node_modules/.bin/testacular start test/testacular.conf.js
+node_modules/.bin/karma start test/karma.conf.js

@@ -1,4 +1,4 @@
-// Testacular configuration
+// Karma configuration
 
 
 // base path, that will be used to resolve files and exclude
@@ -28,7 +28,9 @@ files = [
 ];
 
 // list of files to exclude
-exclude = [];
+exclude = [
+  'vendor/angular-mocks/angular-mocks.min.js',
+];
 
 // use dots reporter, as travis terminal does not support escaping sequences
 // possible values: 'dots', 'progress', 'junit'
