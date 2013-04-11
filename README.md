@@ -7,7 +7,7 @@ Features:
 * Coffeescript / Jade / Less / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
-* [testacular](https://github.com/vojtajina/testacular) integration for
+* [karma](https://github.com/karma-runner/karma) integration for
   unit tests
 * Bootstrap integration with themes.
 
@@ -109,21 +109,21 @@ and run `bower install`. The component will be added to the `vendor` directory.
 
 ### Running unit tests
 
-* `./scripts/test.sh` to run unit tests with [testacular](https://github.com/vojtajina/testacular)
+* `./scripts/test.sh` to run unit tests with [karma](https://github.com/karma-runner/karma)
 * Open the browser you would like to test to [http://localhost:3334](http://localhost:3334)
 
 Notes:
 
 - Testacular will run tests on save. To insure that changes are saved be sure
   to have `./script/server.sh` or `./script/development.sh` running in the console.
-- Set the browsers that you would like to target in the `/test/testacular_conf.js` file
+- Set the browsers that you would like to target in the `/test/karma.conf.js` file
   E.g. `browser = ["ChromeCanary", "Firefox"]`
 
 ### End to end testing
 
 * run the app in development mode as described above using a separate terminal
 * `./scripts/test-e2e.sh` to run e2e tests with
-  [testacular](https://github.com/vojtajina/testacular) using Angular's scenario runner
+  [karma](https://github.com/karma-runner/karma) using Angular's scenario runner
 
 ### Common issues
 
@@ -208,8 +208,8 @@ git pull origin master
         services.spec.js      --> specs for services
       vendor/
         test-results.xml      --> Testacular test resuls
-        testacular-e2e.conf.js --> Testacular end-to-end tests config
-        testacular.conf.js    --> Testacular unit tests config
+        karma-e2e.conf.js --> Testacular end-to-end tests config
+        karma.conf.js    --> Testacular unit tests config
 
     vendor/                   --> The vendor dirctory is populated by Bower.
                                   It contains  Angular, Bootstrap Font-Awesome 

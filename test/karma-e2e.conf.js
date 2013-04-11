@@ -13,7 +13,7 @@ browsers = ['Chrome'];
 
 singleRun = true;
 
-urlRoot = '/__testacular/';
+urlRoot = '/__karma/';
 
 proxies = {
   '/': 'http://localhost:3333/'
