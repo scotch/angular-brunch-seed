@@ -11,10 +11,10 @@
     "bootstrap-less-themes": "git://github.com/scotch/bootstrap-less-themes.git",
     "font-awesome": "3.0.2",
 
-    "angular": "1.0.4",
-    "angular-sanitize": "1.0.4",
-    "angular-resource": "1.0.4",
-    "angular-cookies": "1.0.4",
-    "angular-mocks": "git://github.com/fabsor/bower-angular-mocks.git#v1.0.4"
+    "angular": "1.0.6",
+    "angular-sanitize": "1.0.6",
+    "angular-resource": "1.0.6",
+    "angular-cookies": "1.0.6",
+    "angular-mocks": "1.0.6"
   }
 }
