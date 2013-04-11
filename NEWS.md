@@ -4,6 +4,12 @@
 
 * * *
 
+### 0.3.0 ###
+
+2013-4-10
+
++ **BREAKING CHANGE** testacular test runner was renamed to [karma](https://github.com/karma-runner/karma)
+
 ### 0.2.3 ###
 
 2013-4-10
