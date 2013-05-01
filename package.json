@@ -30,9 +30,9 @@
     "uglify-js-brunch": ">= 1.5 < 1.6",
     "clean-css-brunch": ">= 1.5 < 1.6",
 
-    "bower-stylesheet-brunch": "git://github.com/GulinSS/bower-stylesheet-brunch/#master",
-    "bower-javascript-brunch": "git://github.com/GulinSS/bower-javascript-brunch/#master",
-    "bower-asserts-brunch": "git://github.com/GulinSS/bower-asserts-brunch/#master",
+    "bower-stylesheet-brunch": "git://github.com/angular-brunch/bower-stylesheet-brunch/#master",
+    "bower-javascript-brunch": "git://github.com/angular-brunch/bower-javascript-brunch/#master",
+    "bower-asserts-brunch": "git://github.com/angular-brunch/bower-assets-brunch/#master",
     "bower": "~0.9.2",
 
     "jade-angularjs-brunch": ">= 0.0.5 <= 0.1",
