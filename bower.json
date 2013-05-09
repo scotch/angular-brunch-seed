@@ -7,7 +7,7 @@
 
     "jquery": "1.8.3",
 
-    "bootstrap": "2.2.2",
+    "bootstrap": "~2.3.1",
     "bootstrap-less-themes": "git://github.com/angular-brunch/bootstrap-less-themes.git",
     "font-awesome": "3.0.2",
 
