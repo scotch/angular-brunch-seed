@@ -25,7 +25,7 @@
     "less-brunch": ">= 1.5 < 1.6",
     "stylus-brunch": ">= 1.5 < 1.6",
 
-    "auto-reload-brunch": ">= 1.5 < 1.6",
+    "auto-reload-brunch": ">= 1.5 < 1.7",
 
     "uglify-js-brunch": ">= 1.5 < 1.6",
     "clean-css-brunch": ">= 1.5 < 1.6",
