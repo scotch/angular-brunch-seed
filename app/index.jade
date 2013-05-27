@@ -20,7 +20,10 @@ html(lang='en', ng-app='app')
       };
     script(src='/js/auto-reload.js')
     script(src='/js/vendor.js')
-    script(src='/js/partials.js')
+    script(src='/js/top.partials.js')
+    script(src='/js/home.partials.js')
+    script(src='/js/view1.partials.js')
+    script(src='/js/view2.partials.js')
     script(src='/js/app.js')
   body(ng-controller='AppCtrl')
     .wrapper
@@ -33,7 +36,7 @@ html(lang='en', ng-app='app')
               span.icon-bar
             a(href='/').brand Angular Brunch Seed
             .nav-collapse
-              div(ng-include="'/partials/nav.html'")
+              div(ng-include="'/top/nav.html'")
       .container.main-content
         div(ng-view)
         div Angular Brunch seed app: v<span app-version></span>

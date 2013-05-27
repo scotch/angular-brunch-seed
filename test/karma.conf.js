@@ -17,6 +17,7 @@ files = [
 
   //'app/scripts/**/*.js',
   'app/scripts/**/*.coffee',
+  'app/sections/**/*.coffee',
 
   // Specs //
 

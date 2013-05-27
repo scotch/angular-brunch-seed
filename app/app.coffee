@@ -8,7 +8,13 @@ App = angular.module('app', [
   'app.directives'
   'app.filters'
   'app.services'
-  'partials'
+  'top.partials'
+  'home.partials'
+  'app.home.controllers'
+  'view1.partials'
+  'app.view1.controllers'
+  'view2.partials'
+  'app.view2.controllers'
 ])
 
 App.config([
@@ -19,9 +25,9 @@ App.config([
 
   $routeProvider
 
-    .when('/todo', {templateUrl: '/partials/todo.html'})
-    .when('/view1', {templateUrl: '/partials/partial1.html'})
-    .when('/view2', {templateUrl: '/partials/partial2.html'})
+    .when('/todo', {templateUrl: '/home/todo.html'})
+    .when('/view1', {templateUrl: '/view1/partial1.html'})
+    .when('/view2', {templateUrl: '/view2/partial2.html'})
 
     # Catch all
     .otherwise({redirectTo: '/todo'})
