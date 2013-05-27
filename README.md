@@ -1,5 +1,34 @@
-# angular-brunch-seed
-### A starter project for AngularJS using Brunch.io
+# angular-brunch-seed-modularized
+### A starter project for AngularJS using Brunch.io, now modularized
+
+## Why modularize?
+
+Angular-brunch-seed is awesome, a great start for making Angular apps. I wanted this "modularized" version because Misko recommends organizing code around features rather than type of code, like controllers.coffeee, etc. (see [this](http://www.youtube.com/watch?feature=player_embedded&v=E87rXWE62WU#t=106s) 10/27/13 presentation).
+
+That is, organize your modules by feature. Instead of one big module, have one module per feature (or page).
+This is better now for 
+* unit testing
+* working with larger teams (to not step on each others’ work)
+* preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
+
+These are the files that changed:
+
+```
+# modified:   app/app.coffee
+# modified:   app/index.jade
+# modified:   app/scripts/controllers.coffee
+# modified:   test/karma.conf.js
+# modified:   test/unit/contoller.spec.coffee
+#
+# added:
+# app/sections/
+# test/unit/sections/
+```
+Enjoy and please file an issue if you spot errors or better ways to organize the files.
+
+Cheers, Sanford
+
+# The excellent original documentation
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
