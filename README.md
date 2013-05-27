@@ -11,6 +11,8 @@ This is better now for
 * working with larger teams (to not step on each others’ work)
 * preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
 
+I was partly inspired by [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate).
+
 These are the files that changed:
 
 ```
