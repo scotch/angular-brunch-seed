@@ -22,6 +22,9 @@ Features:
 - [brunch-on-asteroids](https://github.com/exlee/brunch-on-asteroids) 
   by [@exlee](https://github.com/exlee) - A minimalistic version that adds Generators,
   Bootswatch themes, D3, and more.
+- [angular-brunch-seed-modularized](https://github.com/sanfordredlich/angular-brunch-seed-modularized) 
+  by [@sanfordredlich](https://github.com/sanfordredlich) - Demonstrates a modular
+  design, consistent with best practices and better suited for larger projects
 
 ## How to use angular-brunch-seed
 
