@@ -15,6 +15,7 @@
     "angular-sanitize": "1.0.6",
     "angular-resource": "1.0.6",
     "angular-cookies": "1.0.6",
-    "angular-mocks": "1.0.6"
+    "angular-mocks": "1.0.6",
+    "angular-ui-router": "*"
   }
 }

@@ -1,7 +1,11 @@
+
 'use strict'
 
 # Declare app level module which depends on filters, and services
 App = angular.module('app', [
+  #used for angular-ui-router
+  'ui.state'
+  
   'ngCookies'
   'ngResource'
   'app.controllers'
@@ -18,20 +22,31 @@ App = angular.module('app', [
 ])
 
 App.config([
+  '$stateProvider'
   '$routeProvider'
-  '$locationProvider'
 
-($routeProvider, $locationProvider, config) ->
+  ($stateProvider, $routeProvider) ->
+    
+    $stateProvider
 
-  $routeProvider
+      .state('todo', 
+          url: "/todo"
+          views:
+            "main-content": 
+              templateUrl: "/home/todo.html"
+      )
 
-    .when('/todo', {templateUrl: '/home/todo.html'})
-    .when('/view1', {templateUrl: '/view1/partial1.html'})
-    .when('/view2', {templateUrl: '/view2/partial2.html'})
+      .state('view1', 
+          url: "/view1"
+          views:
+            "main-content": 
+              templateUrl: "/view1/partial1.html"
+      )
 
-    # Catch all
-    .otherwise({redirectTo: '/todo'})
-
-  # Without server side support html5 must be disabled.
-  $locationProvider.html5Mode(false)
+      .state('view2', 
+          url: "/view2"
+          views:
+            "main-content": 
+              templateUrl: "/view2/partial2.html"
+      )
 ])

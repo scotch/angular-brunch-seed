@@ -38,7 +38,7 @@ html(lang='en', ng-app='app')
             .nav-collapse
               div(ng-include="'/top/nav.html'")
       .container.main-content
-        div(ng-view)
+        div(ui-view="main-content")
         div Angular Brunch seed app: v<span app-version></span>
       .push
 
@@ -46,4 +46,4 @@ html(lang='en', ng-app='app')
       .container
         p
           small
-            a(href='https://github.com/scotch/angular-brunch-seed') angular-brunch-seed | source
+            a(href='https://github.com/sanfordredlich/angular-brunch-seed-modularized.git') angular-brunch-seed-modularized | source

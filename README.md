@@ -3,30 +3,29 @@
 
 ## Why modularize?
 
-Angular-brunch-seed is awesome, a great start for making Angular apps. I wanted this "modularized" version because Misko recommends organizing code around features rather than type of code, like controllers.coffeee, etc. (see [this](http://www.youtube.com/watch?feature=player_embedded&v=E87rXWE62WU#t=106s) 10/27/13 presentation).
+Angular-brunch-seed is awesome, a great start for making Angular apps. I wanted this "modularized" version to be as simple as possible while laying down patterns that, if followed, will create an easily-maintained complex application. The original Angular-Seed entices one down the path of code segregated by type (controllers, views, etc.) rather than by feature (todo, view1, view2). Misko recommends organizing code around features (see [this](http://www.youtube.com/watch?feature=player_embedded&v=E87rXWE62WU#t=106s) 10/27/13 presentation).
 
-That is, organize your modules by feature. Instead of one big module, have one module per feature (or page).
-This is better now for 
+This is better for 
 * unit testing
 * working with larger teams (to not step on each others’ work)
 * preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
 
-I was partly inspired by [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate).
+(I was partly inspired by [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate))
 
-These are the files that changed:
+## What, exactly, is different?
+* Instead of one controller, one partials folder, one module, there are several
+** top level ones under /app and lower-level ones in /app/sections (to make that work, karma.conf.js and config.coffee had to be changed, to pick up and integrate the files from more locations)
+* Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.   
 
-```
-# modified:   app/app.coffee
-# modified:   app/index.jade
-# modified:   app/scripts/controllers.coffee
-# modified:   test/karma.conf.js
-# modified:   test/unit/contoller.spec.coffee
-#
-# added:
-# app/sections/
-# test/unit/sections/
-```
-Enjoy and please file an issue if you spot errors or better ways to organize the files.
+## How to get started if you have brunch and bower installed
+`brunch new myapp --skeleton https://github.com/sanfordredlich/angular-brunch-seed-modularized.git` to install the app
+`cd myapp`
+`bower install` to install dependencies
+`./scripts/server.sh` to run the app in development mode
+
+For more detail on other ways to get started, see the original docs below
+
+Enjoy and please file an issue if you spot errors or know better ways to make a very simple app that can be grown into a large yet easily maintained app.
 
 Cheers, Sanford
 
