@@ -3,6 +3,11 @@
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
+#### ** MAJOR UPDATES **
+v0.4.0 Bring with it some major changes. If your upgradding from a previous release, 
+please run `./scripts/init.sh` and remove any bower components from `vendor`. Bower
+now uses the `bower_components` directory.
+
 Features:
 * Coffeescript / Jade / Less / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
@@ -10,6 +15,7 @@ Features:
 * [karma](https://github.com/karma-runner/karma) integration for
   unit tests
 * Bootstrap integration with themes.
+* Source map support
 
 ## Alternate Versions
 
@@ -44,7 +50,7 @@ bower install
 ```
 or
 ```
-./node_modules/.bin/bower
+./node_modules/.bin/bower install
 ```
 
 *NOTE:* Depending upon your connection and processor speed the build can take
@@ -113,11 +119,10 @@ and run `bower install`. The component will be added to the `vendor` directory.
 ### Running unit tests
 
 * `./scripts/test.sh` to run unit tests with [karma](https://github.com/karma-runner/karma)
-* Open the browser you would like to test to [http://localhost:3334](http://localhost:3334)
 
 Notes:
 
-- Testacular will run tests on save. To insure that changes are saved be sure
+- Karma will run tests on save. To insure that changes are saved be sure
   to have `./script/server.sh` or `./script/development.sh` running in the console.
 - Set the browsers that you would like to target in the `/test/karma.conf.js` file
   E.g. `browser = ["ChromeCanary", "Firefox"]`
@@ -158,8 +163,6 @@ git pull origin master
 
       assets                  --> a place for static assets. These files will be copied to
                                   the public directory un-modified.
-        font/                 --> [fontawesome](http://fortawesome.github.com/Font-Awesome/) rendering icons
-          fontawesome-webfont.*
         img/                  --> image files
         partials/             --> angular view partials (partial HTML templates)
           nav.html                If you are using HTML you may modify these files directly.
@@ -189,6 +192,9 @@ git pull origin master
       index.jade              --> Index file. This will be converted to assets/index.html on save
       init.coffee             --> application bootstrap
 
+    bower_components/         --> The bower_components dirctory is populated by Bower.
+                                  It contains  Angular, Bootstrap Font-Awesome 
+                                  and other utility files.
     node_modules              --> NodeJS modules
 
     scripts/                  --> handy shell scripts
@@ -210,14 +216,13 @@ git pull origin master
         filters.spec.js       --> specs for filters
         services.spec.js      --> specs for services
       vendor/
-        test-results.xml      --> Testacular test resuls
-        karma-e2e.conf.js --> Testacular end-to-end tests config
-        karma.conf.js    --> Testacular unit tests config
+        test-results.xml      --> Karma test resuls
+        karma-e2e.conf.js     --> Karma end-to-end tests config
+        karma.conf.js         --> Karma unit tests config
 
-    vendor/                   --> The vendor dirctory is populated by Bower.
-                                  It contains  Angular, Bootstrap Font-Awesome 
-                                  and other utility files.
-  component.json              --> Bower component config
+    vendor/                   --> The vendor directory is can be used for 3rd Party libraries.
+                                  Any files located in this directory will be included in js/vendor.js
+  bower.json                  --> Bower component config
   config.coffee               --> Brunch config
   package.json                --> node modules config
 

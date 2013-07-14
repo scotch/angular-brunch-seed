@@ -4,6 +4,15 @@
 
 * * *
 
+### 0.4.0 ###
+2013-7-14
+
++ upgraded to Bower 1.7.4-pre Adding:
+  + Source maps
+  + Native Bower support
++ upgraded to karma 0.9.4
++ upgraded to bower 0.10.0
+
 ### 0.3.0 ###
 
 2013-4-10
