@@ -13,20 +13,26 @@ module.exports = function(karma) {
 
     // list of files / patterns to load in the browser
     files: [
+
+      // Program files
       '_public/js/vendor.js',
       '_public/js/app.js',
-      // Specs //
 
-      // CoffeeScript //
+      // Specs
+
+      // Load mocks directly from bower
+      'bower_components/angular-mocks/angular-mocks.js',
+
+      // CoffeeScript
       'test/unit/**/*.spec.coffee'
-      // Javascript //
+
+      // Javascript
       // 'test/unit/**/*.spec.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-        // 'vendor/angular-mocks/angular-mocks.min.js',
     ],
 
 
