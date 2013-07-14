@@ -23,11 +23,7 @@ module.exports = function(karma) {
       // Load mocks directly from bower
       'bower_components/angular-mocks/angular-mocks.js',
 
-      // CoffeeScript
-      'test/unit/**/*.spec.coffee'
-
-      // Javascript
-      // 'test/unit/**/*.spec.js'
+      'test/unit/**/*.spec.*'
     ],
 
 
