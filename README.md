@@ -4,7 +4,7 @@
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 #### ** MAJOR UPDATES **
-v0.4.0 Bring with it some major changes. If your upgradding from a previous release, 
+v0.4.0 Bring with it some major changes. If you're upgrading from a previous release, 
 please run `./scripts/init.sh` and remove any bower components from `vendor`. Bower
 now uses the `bower_components` directory.
 
