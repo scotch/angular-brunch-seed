@@ -1,1 +1,1 @@
-consoel.log 'found willyoufindme/somefile.coffee'
+console.log 'found willyoufindme/somefile.coffee'
