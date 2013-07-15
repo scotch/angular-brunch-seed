@@ -7,7 +7,7 @@
 ### 0.4.0 ###
 2013-7-14
 
-+ upgraded to Bower 1.7.0-pre Adding:
++ upgraded to Brunch 1.7.0-pre Adding:
   + Source maps
   + Native Bower support
 + upgraded to karma 0.9.4
