@@ -29,7 +29,7 @@
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
 
-    "bower": "~0.10",
+    "bower": "~1.0",
 
     "jade-angularjs-brunch": "~0.0.5",
 
