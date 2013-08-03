@@ -18,7 +18,7 @@ This is better for
 * Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.   
 
 ## How to get started if you have brunch and bower installed
-`brunch new myapp --skeleton https://github.com/sanfordredlich/angular-brunch-seed-modularized.git` to install the app
+`brunch new https://github.com/sanfordredlich/angular-brunch-seed-modularized.git myapp` to install the app
 `cd myapp`
 `bower install` to install dependencies
 `./scripts/server.sh` to run the app in development mode
