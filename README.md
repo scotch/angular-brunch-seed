@@ -10,24 +10,31 @@ This is better for
 * working with larger teams (to not step on each others’ work)
 * preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
 
-(I was partly inspired by [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate))
+(I was partly inspired by Josh Miller's [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate))
 
 ## What, exactly, is different?
+Differences
 * Instead of one controller, one partials folder, one module, there are several
-** top level ones under /app and lower-level ones in /app/sections (to make that work, karma.conf.js and config.coffee had to be changed, to pick up and integrate the files from more locations)
-* Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.   
+  * top level ones under /app 
+  * lower-level ones under /app/sections 
+    * (to make that work, karma.conf.js and config.coffee had to be changed, to pick up and integrate the files from more locations)
+* Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.
 
 ## How to get started if you have brunch and bower installed
-`brunch new https://github.com/sanfordredlich/angular-brunch-seed-modularized.git myapp` to install the app
-`cd myapp`
-`bower install` to install dependencies
-`./scripts/server.sh` to run the app in development mode
+* `brunch new https://github.com/sanfordredlich/angular-brunch-seed-modularized.git myapp` to install the app
+* `cd myapp`
+* `bower install` to install dependencies
+* `./scripts/server.sh` to run the app in development mode
 
 For more detail on other ways to get started, see the original docs below
 
 Enjoy and please file an issue if you spot errors or know better ways to make a very simple app that can be grown into a large yet easily maintained app.
 
-Cheers, Sanford
+Cheers, 
+
+
+Sanford
+
 
 # The excellent original documentation
 
