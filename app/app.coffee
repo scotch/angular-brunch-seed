@@ -23,9 +23,11 @@ App = angular.module('app', [
 
 App.config([
   '$stateProvider'
-  '$routeProvider'
+  '$urlRouterProvider'
 
-  ($stateProvider, $routeProvider) ->
+  ($stateProvider, $urlRouterProvider) ->
+    
+    $urlRouterProvider.otherwise("/todo")
     
     $stateProvider
 
