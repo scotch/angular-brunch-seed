@@ -1,44 +1,12 @@
-# angular-brunch-seed-modularized
-### A starter project for AngularJS using Brunch.io, now modularized
-
-## Why modularize?
-
-Angular-brunch-seed is awesome, a great start for making Angular apps. I wanted this "modularized" version to be as simple as possible while laying down patterns that, if followed, will create an easily-maintained complex application. The original Angular-Seed entices one down the path of code segregated by type (controllers, views, etc.) rather than by feature (todo, view1, view2). Misko recommends organizing code around features (see [this](http://www.youtube.com/watch?feature=player_embedded&v=E87rXWE62WU#t=106s) 10/27/13 presentation).
-
-This is better for 
-* unit testing
-* working with larger teams (to not step on each others’ work)
-* preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
-
-(I was partly inspired by Josh Miller's [ng-boilerplate](https://github.com/joshdmiller/ng-boilerplate))
-
-## What, exactly, is different?
-Differences
-* Instead of one controller, one partials folder, one module, there are several
-  * top level ones under /app 
-  * lower-level ones under /app/sections 
-    * (to make that work, karma.conf.js and config.coffee had to be changed, to pick up and integrate the files from more locations)
-* Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.
-
-## How to get started if you have brunch and bower installed
-* `brunch new https://github.com/sanfordredlich/angular-brunch-seed-modularized.git myapp` to install the app
-* `cd myapp`
-* `bower install` to install dependencies
-* `./scripts/server.sh` to run the app in development mode
-
-For more detail on other ways to get started, see the original docs below
-
-Enjoy and please file an issue if you spot errors or know better ways to make a very simple app that can be grown into a large yet easily maintained app.
-
-Cheers, 
-
-
-Sanford
-
-
-# The excellent original documentation
+# angular-brunch-seed
+### A starter project for AngularJS using Brunch.io
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
+
+#### ** MAJOR UPDATES **
+v0.4.1 Brings with it some major changes. If you're upgrading from a previous release, 
+please run `./scripts/init.sh` and remove any bower components from `vendor`. Bower
+now uses the `bower_components` directory.
 
 Features:
 * Coffeescript / Jade / Less / Stylus automatically compiled on save
@@ -47,6 +15,26 @@ Features:
 * [karma](https://github.com/karma-runner/karma) integration for
   unit tests
 * Bootstrap integration with themes.
+* Source map support
+* Modularized code, see /app/sections
+* angular/ui-router for more flexible routing
+
+## Why modularize?
+
+This "modularized" version is intended to be as simple as possible while laying down patterns that, if followed, will create an easily-maintained complex application. The original Angular-Seed entices one down the path of code segregated by type (controllers, views, etc.) rather than by feature (todo, view1, view2). Misko recommends organizing code around features (see [this](http://www.youtube.com/watch?feature=player_embedded&v=E87rXWE62WU#t=106s) 10/27/13 presentation).
+
+Modularized code is better for 
+* unit testing
+* working with larger teams (to not step on each others’ work)
+* preparing for the future because modules will be able to be lazy-loaded and so this structure will be either required or firmly recommended
+
+## What, exactly, is different in the modularized code?
+Differences
+* Instead of one controller, one partials folder, one module, there are several
+  * top level ones under /app 
+  * lower-level ones under /app/sections 
+    * (to make that work, karma.conf.js and config.coffee had to be changed, to pick up and integrate the files from more locations)
+* Instead of using the $routeProvider, it uses angular-ui-router to allow output to multiple named views, nested views, etc. Routing and ng-view was mentioned by many online as pain points for larger apps. This arrangement should be much better.
 
 ## Alternate Versions
 
@@ -59,6 +47,9 @@ Features:
 - [brunch-on-asteroids](https://github.com/exlee/brunch-on-asteroids) 
   by [@exlee](https://github.com/exlee) - A minimalistic version that adds Generators,
   Bootswatch themes, D3, and more.
+- [angular-brunch-seed-modularized](https://github.com/sanfordredlich/angular-brunch-seed-modularized) 
+  by [@sanfordredlich](https://github.com/sanfordredlich) - Demonstrates a modular
+  design, consistent with best practices and better suited for larger projects
 
 ## How to use angular-brunch-seed
 
@@ -69,7 +60,7 @@ Features:
 
 Or if you have **Brunch** installed run:
 
-`brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
+`brunch new https://github.com/scotch/angular-brunch-seed myapp`
 
 You must also install packages using bower. Either
 
@@ -78,7 +69,7 @@ bower install
 ```
 or
 ```
-./node_modules/.bin/bower
+./node_modules/.bin/bower install
 ```
 
 *NOTE:* Depending upon your connection and processor speed the build can take
@@ -147,11 +138,10 @@ and run `bower install`. The component will be added to the `vendor` directory.
 ### Running unit tests
 
 * `./scripts/test.sh` to run unit tests with [karma](https://github.com/karma-runner/karma)
-* Open the browser you would like to test to [http://localhost:3334](http://localhost:3334)
 
 Notes:
 
-- Testacular will run tests on save. To insure that changes are saved be sure
+- Karma will run tests on save. To insure that changes are saved be sure
   to have `./script/server.sh` or `./script/development.sh` running in the console.
 - Set the browsers that you would like to target in the `/test/karma.conf.js` file
   E.g. `browser = ["ChromeCanary", "Firefox"]`
@@ -192,8 +182,6 @@ git pull origin master
 
       assets                  --> a place for static assets. These files will be copied to
                                   the public directory un-modified.
-        font/                 --> [fontawesome](http://fortawesome.github.com/Font-Awesome/) rendering icons
-          fontawesome-webfont.*
         img/                  --> image files
         partials/             --> angular view partials (partial HTML templates)
           nav.html                If you are using HTML you may modify these files directly.
@@ -223,6 +211,9 @@ git pull origin master
       index.jade              --> Index file. This will be converted to assets/index.html on save
       init.coffee             --> application bootstrap
 
+    bower_components/         --> The bower_components dirctory is populated by Bower.
+                                  It contains  Angular, Bootstrap Font-Awesome 
+                                  and other utility files.
     node_modules              --> NodeJS modules
 
     scripts/                  --> handy shell scripts
@@ -244,14 +235,13 @@ git pull origin master
         filters.spec.js       --> specs for filters
         services.spec.js      --> specs for services
       vendor/
-        test-results.xml      --> Testacular test resuls
-        karma-e2e.conf.js --> Testacular end-to-end tests config
-        karma.conf.js    --> Testacular unit tests config
+        test-results.xml      --> Karma test resuls
+        karma-e2e.conf.js     --> Karma end-to-end tests config
+        karma.conf.js         --> Karma unit tests config
 
-    vendor/                   --> The vendor dirctory is populated by Bower.
-                                  It contains  Angular, Bootstrap Font-Awesome 
-                                  and other utility files.
-  component.json              --> Bower component config
+    vendor/                   --> The vendor directory is can be used for 3rd Party libraries.
+                                  Any files located in this directory will be included in js/vendor.js
+  bower.json                  --> Bower component config
   config.coffee               --> Brunch config
   package.json                --> node modules config
 

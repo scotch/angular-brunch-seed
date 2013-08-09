@@ -5,14 +5,27 @@ describe "my app", ->
   beforeEach ->
     browser().navigateTo "/"
 
-  it "should automatically redirect to /todo when location hash/fragment is empty", ->
-    expect(browser().location().url()).toBe "/todo"
+  NEW_ITEM_LABEL = "test newly added item"
 
-  it "should navigate to /view1 when the View 1 link in nav is clicked", ->
+  switchToToDo = ->
+      element(".nav a[href=\"#/todo\"]").click()
+      expect(browser().location().url()).toBe "/todo"
+
+  switchToView1 = ->
     element(".nav a[href=\"#/view1\"]").click()
     expect(browser().location().url()).toBe "/view1"
 
+  it "should automatically redirect to /todo when location hash/fragment is empty", ->
+    expect(browser().location().url()).toBe "/todo"
+
   describe "todo", ->
+
+    addToDoItem = ->
+      input("todoText").enter NEW_ITEM_LABEL
+      element("input[type=\"submit\"]").click()
+      expect(repeater("[ui-view] ul li").count()).toEqual 3
+      expect(element("[ui-view] ul li:last span").text()).toEqual NEW_ITEM_LABEL
+      expect(input("todoText").val()).toEqual ""
 
     it "should list 2 items", ->
       expect(repeater("[ui-view] ul li").count()).toEqual 2
@@ -30,21 +43,25 @@ describe "my app", ->
       element("[ui-view] a[ng-click=\"archive()\"]").click()
       expect(repeater("[ui-view] ul li").count()).toEqual 1
 
-    it "should add a newly submitted item to the end of the list and empty the text input", ->
-      newItemLabel = "test newly added item"
-      input("todoText").enter newItemLabel
-      element("[ui-view] input[type=\"submit\"]").click()
-      expect(repeater("[ui-view] ul li").count()).toEqual 3
-      expect(element("[ui-view] ul li:last span").text()).toEqual newItemLabel
-      expect(input("todoText").val()).toEqual ""
+    it "should add a newly submitted item to the end of the list and empty the text input", addToDoItem
 
+    it "should still have a newly submitted item after switching views", ->
+      addToDoItem
+      switchToView1
+      switchToToDo
+      expect(repeater("[ui-view] ul li").count()).toEqual 3
+      expect(element("[ui-view] ul li:last span").text()).toEqual NEW_ITEM_LABEL
+
+
+  it "should navigate to /view1 when the View 1 link in nav is clicked", ->
+    switchToView1
 
   describe "view1", ->
     beforeEach ->
       browser().navigateTo "#/view1"
 
     it "should render view1 when user navigates to /view1", ->
-      expect(element("[ui-view] p:first").text()).toMatch /partial for view 1/
+      expect(element("p:first").text()).toMatch /partial for view 1/
 
 
   describe "view2", ->
@@ -52,4 +69,4 @@ describe "my app", ->
       browser().navigateTo "#/view2"
 
     it "should render view2 when user navigates to /view2", ->
-      expect(element("[ui-view] p:first").text()).toMatch /partial for view 2/
+      expect(element("p:first").text()).toMatch /partial for view 2/

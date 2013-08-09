@@ -12,9 +12,9 @@ App = angular.module('app', [
   'app.directives'
   'app.filters'
   'app.services'
-  'top.partials'
-  'home.partials'
-  'app.home.controllers'
+  'navbar.partials'
+  'todo.partials'
+  'app.todo.controllers'
   'view1.partials'
   'app.view1.controllers'
   'view2.partials'
@@ -26,7 +26,8 @@ App.config([
   '$urlRouterProvider'
 
   ($stateProvider, $urlRouterProvider) ->
-    
+
+    # default to the todo page
     $urlRouterProvider.otherwise("/todo")
     
     $stateProvider
@@ -35,7 +36,7 @@ App.config([
           url: "/todo"
           views:
             "main-content": 
-              templateUrl: "/home/todo.html"
+              templateUrl: "/todo/todo.html"
       )
 
       .state('view1', 

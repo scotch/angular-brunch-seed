@@ -1,5 +1,7 @@
 'use strict'
 
+### Controllers ###
+
 angular.module('app.controllers', [])
 
 .controller('AppCtrl', [
@@ -9,6 +11,8 @@ angular.module('app.controllers', [])
   '$rootScope'
 
 ($scope, $location, $resource, $rootScope) ->
+  
+  $scope.appData = {}
 
   # Uses the url to determine if the selected
   # menu item should have the class active.

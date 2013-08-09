@@ -8,6 +8,30 @@ html(lang='en', ng-app='app')
     meta(name='author', content='')
     title(ng-bind-template='{{pageTitle}}')
     link(rel='stylesheet', href='/css/app.css')
+
+  body(ng-controller='AppCtrl')
+    .wrapper
+      .navbar.navbar-static-top
+        .navbar-inner
+          .container
+            button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/').brand Angular Brunch Seed
+            .nav-collapse
+              div(ng-include="'/navbar/nav.html'")
+      .container.main-content
+        div(ui-view="main-content")
+        div Angular Brunch seed app: v<span app-version></span>
+      .push
+
+    footer.footer
+      .container
+        p
+          small
+            a(href='https://github.com/scotch/angular-brunch-seed.git') angular-brunch-seed (modularized) | source
+
     //-script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     //if lte IE 7
       script(src='http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js')
@@ -20,30 +44,8 @@ html(lang='en', ng-app='app')
       };
     script(src='/js/auto-reload.js')
     script(src='/js/vendor.js')
-    script(src='/js/top.partials.js')
-    script(src='/js/home.partials.js')
+    script(src='/js/navbar.partials.js')
+    script(src='/js/todo.partials.js')
     script(src='/js/view1.partials.js')
     script(src='/js/view2.partials.js')
     script(src='/js/app.js')
-  body(ng-controller='AppCtrl')
-    .wrapper
-      .navbar.navbar-static-top
-        .navbar-inner
-          .container
-            button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/').brand Angular Brunch Seed
-            .nav-collapse
-              div(ng-include="'/top/nav.html'")
-      .container.main-content
-        div(ui-view="main-content")
-        div Angular Brunch seed app: v<span app-version></span>
-      .push
-
-    footer.footer
-      .container
-        p
-          small
-            a(href='https://github.com/sanfordredlich/angular-brunch-seed-modularized.git') angular-brunch-seed-modularized | source
