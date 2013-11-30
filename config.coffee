@@ -1,7 +1,8 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    assets: /^app\/assets\//
+    assets:  /^app\/assets\//
+    ignored: /^(bower_components\/bootstrap-less(-themes)?|app\/styles\/overrides)/
   modules:
     definition: false
     wrapper: false
