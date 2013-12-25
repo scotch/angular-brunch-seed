@@ -41,7 +41,7 @@ Features:
 
 Or if you have **Brunch** installed run:
 
-`brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
+`brunch new https://github.com/scotch/angular-brunch-seed myapp`
 
 You must also install packages using bower. Either
 
