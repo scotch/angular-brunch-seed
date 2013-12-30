@@ -14,7 +14,9 @@ module.exports = function(karma) {
     // list of files / patterns to load in the browser
     files: [
         'test/e2e/**/*.js',
-        'test/e2e/**/*.coffee'
+        'test/e2e/**/*.coffee',
+        {pattern: '_public/**/*.css', included: false},
+        {pattern: '_public/**/*.js', included: false}
     ],
 
     // list of files to exclude
