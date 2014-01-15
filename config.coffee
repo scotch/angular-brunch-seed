@@ -2,7 +2,7 @@ exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     assets:  /^app\/assets\//
-    ignored: /^(bower_components\/bootstrap-less(-themes)?|app\/styles\/overrides)/
+    ignored: /^(bower_components\/bootstrap-less(-themes)?|app\/styles\/overrides|(.*?\/)?[_]\w*)/
   modules:
     definition: false
     wrapper: false
@@ -23,7 +23,7 @@ exports.config =
         ]
 
     templates:
-      joinTo: 
+      joinTo:
         'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   plugins:
