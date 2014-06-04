@@ -222,9 +222,9 @@ git pull origin master
 
     vendor/                   --> The vendor directory is can be used for 3rd Party libraries.
                                   Any files located in this directory will be included in js/vendor.js
-  bower.json                  --> Bower component config
-  config.coffee               --> Brunch config
-  package.json                --> node modules config
+    bower.json                --> Bower component config
+    config.coffee             --> Brunch config
+    package.json              --> node modules config
 
 ## Contributers
 
