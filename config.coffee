@@ -1,5 +1,5 @@
 exports.config =
-  # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  # See docs at https://github.com/brunch/brunch/blob/stable/docs/config.md.
   conventions:
     assets:  /^app\/assets\//
     ignored: /^(bower_components\/bootstrap-less(-themes)?|app\/styles\/overrides|(.*?\/)?[_]\w*)/
