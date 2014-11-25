@@ -87,6 +87,10 @@ HTML run the command:
 ```
 ./scripts/compile-html.sh
 ```
+
+Open "app/app.coffee" and remove the dependency on 'partials' on the module App.
+
+
 All Jade file will be compiled to HTML and be placed in the `app/assets` directory.
 Additionally, the `*.jade` files will be removed from the project. Any changes
 that you make to the `app/assets/**/*.html` files will now appear in the browser.
